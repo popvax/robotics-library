@@ -1,0 +1,13 @@
+{
+  "title": "Demo-JEPA: Joint-Embedding Predictive Architecture for One-Shot Cross-Embodiment Imitation",
+  "type": "paper",
+  "summary": "Demo-JEPA proposes a framework for robotic imitation learning that interprets demonstrations as goal specifications rather than action reproductions, translating source visual demonstrations into target-compatible future latent trajectories using a JEPA-based world model. This enables robots with different morphologies to learn from diverse embodiments without requiring action-level correspondence between source and target. Evaluated on RLBench and real-world tasks, the method matches the performance of specialized planners while generalizing to novel scenarios.",
+  "authors": ["Jingyang He", "Guangrun Li", "Jieyu Zhang", "Chengkai Hou", "Zhengping Che", "Shanghang Zhang"],
+  "date": "2026-05-20",
+  "venue": "arXiv 2026",
+  "tags": ["jepa", "imitation-learning", "world-model"],
+  "links": [
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.20811" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2605.20811" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Beyond Action Residuals: Real-World Robot Policy Steering via Bottleneck Latent Reinforcement Learning",
+  "type": "paper",
+  "summary": "ZPRL enables efficient policy steering by fine-tuning a base imitation learning policy using reinforcement learning through a constrained bottleneck latent perturbation interface. Unlike action-residual approaches, the method operates in a compressed latent space that naturally limits perturbation magnitude, preserving the action prior learned from offline data while achieving high sample efficiency. The approach produces smooth robot actions and is validated on real-world manipulation tasks.",
+  "authors": ["Dongjie Yu", "Kun Lei", "Zhennan Jiang", "Jia Pan", "Huazhe Xu"],
+  "date": "2026",
+  "venue": "arXiv 2026",
+  "tags": ["reinforcement-learning", "imitation-learning", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://manutdmoon.github.io/ZPRL/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.19919" },
+    { "label": "Code", "url": "https://github.com/manutdmoon/ZPRL" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/ManUtdMoon/robomimicv030" }
+  ]
+}

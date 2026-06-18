@@ -1,0 +1,17 @@
+{
+  "title": "HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos",
+  "type": "paper",
+  "summary": "HumanEgo is a framework that enables robots to learn manipulation skills from brief human egocentric video recordings without any robot demonstrations. It bridges the embodiment gap through entity-level representations of hand-object interaction and employs flow-matching policies with auxiliary training objectives. With only 30 minutes of human video per task, the system achieves 92.5% average success across real-world tasks, outperforming matched-time robot teleoperation by 41%, and generalizes zero-shot across different robot platforms, cameras, and environments.",
+  "authors": ["Zhi Wang", "Botao He", "Kelin Yu", "Seungjae Lee", "Ruohan Gao", "Furong Huang", "Yiannis Aloimonos"],
+  "date": "2026",
+  "venue": "arXiv 2026",
+  "tags": ["human-video", "imitation-learning", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://humanego-ai.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.24934" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2605.24934" },
+    { "label": "Code", "url": "https://github.com/TX-Leo/HumanEgo" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/Leo-TX/HumanEgo" },
+    { "label": "Video", "url": "https://youtu.be/pdL46diijuY" }
+  ]
+}

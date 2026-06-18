@@ -1,0 +1,15 @@
+{
+  "title": "Nano World Models: A Minimalist Implementation of Future Video Prediction",
+  "type": "paper",
+  "summary": "Nano World Models is a minimalist codebase for future video prediction centered around diffusion forcing, providing a unified interface for generative objectives, model scales, action-conditioning mechanisms, latent observation spaces, datasets, and evaluation protocols. It enables controlled studies of world-modeling components across simple control environments, game simulation, and real-robot data, examining how prediction parameterization, architecture scale, action injection, sampling budget, and domain complexity affect video prediction quality. By releasing code, configurations, evaluation scripts, and pretrained checkpoints, it aims to be a compact yet extensible experimental substrate for open, reproducible world-model research.",
+  "authors": ["Siqiao Huang", "Partha Kaushik", "Michael Chen", "Hengkai Pan", "Kaiwen Geng", "Omar Chehab", "Fernando Moreno-Pino", "Max Simchowitz"],
+  "date": "2026-05-17",
+  "venue": "arXiv 2026",
+  "tags": ["world-model", "video-prediction", "diffusion"],
+  "links": [
+    { "label": "Project Page", "url": "https://simchowitzlabpublic.github.io/nano-world-model/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.23993" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2605.23993" },
+    { "label": "Code", "url": "https://github.com/simchowitzlabpublic/nano-world-model" }
+  ]
+}

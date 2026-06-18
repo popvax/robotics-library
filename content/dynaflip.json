@@ -1,0 +1,15 @@
+{
+  "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
+  "type": "paper",
+  "summary": "DynaFLIP introduces a framework that learns dynamics-aware visual representations by aligning image transitions, language, and 3D flow. Rather than relying on static visual encoders, it embeds motion understanding into the perception stage using multimodal pre-training with image-language-3D flow triplets. The approach demonstrates consistent performance gains across simulation and real-world manipulation tasks, with improvements reaching +22.5% under out-of-distribution scenarios.",
+  "authors": ["Jusuk Lee", "Seungjae Lee", "Jonghun Shin", "Hoseong Jung", "Sungha Kim", "Daesol Cho", "H. Jin Kim", "Jia-Bin Huang", "Furong Huang"],
+  "date": "2026",
+  "venue": "arXiv 2026",
+  "tags": ["manipulation", "sim-to-real"],
+  "links": [
+    { "label": "Project Page", "url": "https://dynaflip-robotics.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.30350" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2605.30350" },
+    { "label": "Code", "url": "https://github.com/JU-SUK/DynaFLIP" }
+  ]
+}

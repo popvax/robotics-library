@@ -1,0 +1,13 @@
+{
+  "title": "Cyclo Intelligence: Physical AI Workflow System for ROBOTIS Robots",
+  "type": "website",
+  "summary": "Cyclo Intelligence is a Physical AI workflow platform developed by ROBOTIS that provides an integrated web UI for robot dataset collection, dataset management, LeRobot-format conversion, and trained-model deployment. The system comprises two main components: Cyclo Data for dataset pipeline management and Cyclo Brain for policy runtime and robot inference. It is compatible with ROBOTIS OMY, OMX, AI Worker, and any ROS 2-enabled robot, and supports simulation environments including Gazebo and Isaac Sim/Lab.",
+  "authors": ["ROBOTIS"],
+  "date": "2025",
+  "venue": "ROBOTIS",
+  "tags": ["imitation-learning", "dataset"],
+  "links": [
+    { "label": "Project Page", "url": "https://ai.robotis.com/ai_worker/cyclo_intelligence_ai_worker.html" },
+    { "label": "Code", "url": "https://github.com/ROBOTIS-GIT/cyclo_intelligence" }
+  ]
+}

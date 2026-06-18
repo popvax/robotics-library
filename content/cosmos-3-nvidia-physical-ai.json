@@ -1,0 +1,17 @@
+{
+  "title": "NVIDIA Cosmos 3: The First Open Omni-Model for Physical AI Reasoning and Action",
+  "type": "blog",
+  "summary": "NVIDIA Cosmos 3 is a unified foundation model that integrates world generation, physical reasoning, and action generation into a single omni-model using a Mixture-of-Transformers architecture, replacing the need for separate specialized models. Two variants are released: Cosmos 3 Nano (16B parameters) for efficient edge inference and Cosmos 3 Super (64B) for large-scale deployments targeting robotics, autonomous vehicles, and smart spaces. The model is open-sourced on Hugging Face and is positioned as a generalist Physical AI backbone capable of video-based world simulation and robot action prediction within a single unified system.",
+  "authors": ["NVIDIA"],
+  "date": "2026-06-01",
+  "venue": "NVIDIA blog / Hugging Face",
+  "tags": ["world-model", "generalist-policy", "video-prediction"],
+  "links": [
+    { "label": "Blog", "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" },
+    { "label": "Paper", "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf" },
+    { "label": "Code", "url": "https://github.com/nvidia/Cosmos" },
+    { "label": "Demo", "url": "https://nvidia-cosmos.github.io/cosmos-cookbook/" },
+    { "label": "Dataset", "url": "https://huggingface.co/collections/nvidia/cosmos3" }
+  ],
+  "featured": true
+}

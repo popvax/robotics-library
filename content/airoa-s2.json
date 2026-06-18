@@ -1,0 +1,11 @@
+{
+  "title": "S2 (AIRoA)",
+  "type": "website",
+  "summary": "This URL (s2.airoa.io) is associated with the AI Robot Association (AIRoA), a Japanese organization focused on developing open platforms and datasets for robotics foundation models and general-purpose robot development. The specific content of the S2 project page could not be retrieved due to access restrictions (HTTP 403). Based on context, AIRoA is known for the AIRoA MoMa large-scale mobile manipulation dataset and VLA pipeline research.",
+  "authors": ["AI Robot Association (AIRoA)"],
+  "tags": ["dataset", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://s2.airoa.io/" },
+    { "label": "Blog", "url": "https://www.airoa.org/" }
+  ]
+}

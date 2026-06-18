@@ -1,0 +1,15 @@
+{
+  "title": "τ0-WM: A Unified Video-Action World Model for Robotic Manipulation",
+  "type": "paper",
+  "summary": "τ0-WM is a 5-billion-parameter world model that unifies action generation, video prediction, and task evaluation under a shared video diffusion backbone. The model is trained on approximately 27,300 hours of heterogeneous data — including real-robot teleoperation, UMI-style demonstrations, and egocentric human videos — and predicts future visual states alongside executable robot actions from multi-view observations and language instructions. At inference, a propose-evaluate-revise procedure generates candidate actions, simulates their visual consequences, and refines action selection prior to execution, enabling anticipatory planning before physical action.",
+  "authors": ["AGIBOT Finch Research Team"],
+  "date": "2026-05-31",
+  "venue": "AGIBOT Finch",
+  "tags": ["world-model", "video-prediction", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://finch.agibot.com/research/tau0-wm" },
+    { "label": "Paper", "url": "https://finch-static.agibot.com/VAM/blog/tau_0_wm.pdf" },
+    { "label": "Code", "url": "https://github.com/sii-research/tau-0-wm" },
+    { "label": "Demo", "url": "https://huggingface.co/sii-research/tau-0-wm" }
+  ]
+}

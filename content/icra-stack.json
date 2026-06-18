@@ -1,0 +1,14 @@
+{
+  "title": "Learning Composable Skills by Discovering Spatial and Temporal Structure with Foundation Models",
+  "type": "paper",
+  "summary": "STACK is a framework that discovers and learns composable manipulation skills from unsegmented demonstrations by leveraging spatial and temporal structure extracted from foundation models. Video-language models are used for temporal segmentation of demonstration trajectories, while vision foundation models provide spatial structure for skill grounding, enabling generalization to novel scene configurations and longer task horizons from only 5–10 demonstrations. The method is validated across three real-world domains (bookshelf, kitchen, and mug tree), demonstrating generalization across new object arrangements, geometric constraints, and extended task compositions.",
+  "authors": ["Neil Nie", "Wenlong Huang", "Jiayuan Mao", "Li Fei-Fei", "Weiyu Liu", "Jiajun Wu"],
+  "date": "2026",
+  "venue": "ICRA 2026",
+  "tags": ["manipulation", "planning", "imitation-learning"],
+  "links": [
+    { "label": "Project Page", "url": "https://icra-stack.github.io/" },
+    { "label": "Paper", "url": "https://icra-stack.github.io/STACK.pdf" },
+    { "label": "Code", "url": "https://github.com/NeilNie/STACK" }
+  ]
+}

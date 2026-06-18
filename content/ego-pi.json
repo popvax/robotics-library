@@ -1,0 +1,13 @@
+{
+  "title": "Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data",
+  "type": "paper",
+  "summary": "Ego-Pi addresses robotic data scarcity by leveraging egocentric human video data to train humanoid robots with dexterous hands. The work co-trains vision-language-action models on human and robot data together, enabling robots to learn high-level task semantics such as sorting logic and skill composition. The approach achieves success rates of 90% or higher on the tested dexterous manipulation tasks.",
+  "authors": ["Ji Woong Kim", "Ke Wang", "Sirui Chen", "Zipeng Fu", "Cong Zhao", "Jeff Lai", "Chelsea Finn"],
+  "date": "2026",
+  "venue": "arXiv 2026",
+  "tags": ["vla", "human-video", "dexterous-manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://egopipaper.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.08107" }
+  ]
+}

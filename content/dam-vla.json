@@ -1,0 +1,14 @@
+{
+  "title": "DAM-VLA: Decoupled Asynchronous Multimodal Vision-Language-Action Model",
+  "type": "paper",
+  "summary": "Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate — a fundamental mismatch since physical sensors operate at different frequencies. DAM-VLA addresses this by maintaining separate latent buffers for each modality that update at their respective sensor rates, using gated cross-attention to integrate high-frequency inputs while preserving the pretrained foundation model. The approach achieves a 95.2% average success rate on seven contact-rich real-world manipulation tasks, more than doubling the strongest baseline (40.95%), while maintaining a responsive 100 Hz control frequency.",
+  "authors": ["Pankhuri Vanjani", "Zhuoyue Li", "Jakub Suliga", "Moritz Reuss", "Gianluca Geraci", "Xinkai Jiang", "Rudolf Lioutikov"],
+  "date": "2026-06-10",
+  "venue": "arXiv 2026",
+  "tags": ["vla", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://intuitive-robots.github.io/DAM-VLA/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.12105" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2606.12105" }
+  ]
+}

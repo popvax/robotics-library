@@ -1,0 +1,6 @@
+# pnpm v10+ reads build-script allowances here (no longer from package.json).
+# esbuild's install script links the platform binary that Vite + tsx use.
+onlyBuiltDependencies:
+  - esbuild
+allowBuilds:
+  esbuild: true

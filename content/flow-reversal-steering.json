@@ -1,0 +1,14 @@
+{
+  "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+  "type": "paper",
+  "summary": "Flow Reversal Steering (FRS) is a technique for steering generalist flow-matching robot policies toward task-relevant behaviors by taking suboptimal but plausible actions, finding their latent noise representations by passing them through the flow policy in reverse, and mapping them to nearby generalist action modes. The approach enables zero-shot control guided by vision-language models, behavioral cloning distillation with up to 95% success-rate improvements in under one minute, and bootstrapping of reinforcement learning. FRS is evaluated across simulated and real-world manipulation tasks, demonstrating broad applicability as a lightweight steering mechanism for pretrained flow policies.",
+  "authors": ["Andy Tang", "William Chen", "Andrew Wagenmaker", "Chelsea Finn", "Sergey Levine"],
+  "date": "2026",
+  "venue": "arXiv 2026",
+  "tags": ["flow-matching", "generalist-policy", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://flow-reversal-steering.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.13675" },
+    { "label": "Paper", "url": "https://flow-reversal-steering.github.io/static/Flow_Reversal_Steering.pdf" }
+  ]
+}

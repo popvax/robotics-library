@@ -1,0 +1,16 @@
+{
+  "title": "A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens",
+  "type": "paper",
+  "summary": "DeltaTok proposes compressing video frames into single delta tokens by encoding inter-frame differences using a frozen vision foundation model, drastically reducing the token count required for generative world modeling. The method achieves over 35x fewer parameters and 2,000x fewer FLOPs than comparable generative models, while using 1,024–2,048x fewer tokens than DINO-based approaches. This extreme compression enables efficient video generation and world modeling without sacrificing representational fidelity.",
+  "authors": ["Tommie Kerssies", "Gabriele Berton", "Ju He", "Qihang Yu", "Wufei Ma", "Daan de Geus", "Gijs Dubbelman", "Liang-Chieh Chen"],
+  "date": "2026",
+  "venue": "CVPR 2026",
+  "tags": ["world-model", "video-prediction"],
+  "links": [
+    { "label": "Project Page", "url": "https://deltatok.github.io/" },
+    { "label": "Paper", "url": "https://arxiv.org/abs/2604.04913" },
+    { "label": "Code", "url": "https://github.com/amazon-far/deltatok" },
+    { "label": "Dataset", "url": "https://huggingface.co/collections/Amazon-FAR/deltatok" }
+  ],
+  "featured": true
+}

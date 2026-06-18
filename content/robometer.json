@@ -1,0 +1,17 @@
+{
+  "title": "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons",
+  "type": "paper",
+  "summary": "Robometer is a dense, general-purpose video-language reward model trained via dual objectives: frame-level progress and success prediction on expert demonstrations, and trajectory-comparison preference learning from both optimal and suboptimal data. The work introduces RBM-1M, a large-scale reward-learning dataset comprising over one million trajectories spanning diverse robot embodiments and tasks. Robometer is evaluated across six downstream use cases including online RL, offline RL, model-based planning, failure detection, and data retrieval, demonstrating broad applicability as a general robotic reward signal.",
+  "authors": ["Anthony Liang", "Yigit Korkmaz", "Jiahui Zhang", "Minyoung Hwang", "Abrar Anwar", "Sidhant Kaushik", "Aditya Shah", "Alex S. Huang", "Luke Zettlemoyer", "Dieter Fox", "Yu Xiang", "Anqi Li", "Andreea Bobu", "Abhishek Gupta", "Stephen Tu", "Erdem Biyik", "Jesse Zhang"],
+  "date": "2026",
+  "venue": "RSS 2026",
+  "tags": ["reward-design", "dataset", "benchmark"],
+  "links": [
+    { "label": "Project Page", "url": "https://robometer.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2603.02115" },
+    { "label": "Code", "url": "https://github.com/robometer/robometer" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/robometer/rbm-1m-ood" },
+    { "label": "Model Weights", "url": "https://huggingface.co/robometer/Robometer-4B" },
+    { "label": "Demo", "url": "https://robometer-rewardeval-ui.hf.space" }
+  ]
+}
