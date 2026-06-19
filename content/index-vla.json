@@ -1,0 +1,11 @@
+{
+  "title": "InDex: Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+  "summary": "InDex is a framework for adapting Vision-Language-Action models trained on simple parallel grippers to complex multi-fingered dexterous hands. Direct end-to-end joint fine-tuning causes catastrophic forgetting of spatial reasoning and action collapse under limited data. InDex uses a two-stage approach in which parallel-gripper outputs serve as intent proxies, enabling efficient dexterous skill learning while preserving the original model's spatial generalization capabilities.",
+  "authors": ["Chuanke Pang", "Junyi Huang", "Zhijun Zhao", "Yaobing Wang", "Kun Xu", "Xilun Ding"],
+  "date": "2026-06-10",
+  "tags": ["vla", "dexterous-manipulation", "imitation-learning", "generalist-policy"],
+  "links": [
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.12109" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2606.12109" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "WorldDP: Unifying Object-Centric World Models and Diffusion Policy: A Hierarchical Framework for Multi-Stage Robotic Tasks",
+  "summary": "WorldDP introduces a hierarchical framework that combines object-centric world models with diffusion policy for multi-stage robotic manipulation. Complex tasks are decomposed into reachable subgoals executed by a low-level diffusion policy, while high-level planning leverages a world model within particle filtering to optimize action sequences. Object-centric representations enable sequential planning per entity across long-horizon tasks.",
+  "authors": ["Raktim Gautam Goswami", "Prashanth Krishnamurthy", "Yann LeCun", "Farshad Khorrami"],
+  "date": "2026",
+  "tags": ["world-model", "diffusion", "manipulation", "planning"],
+  "links": [
+    { "label": "Project Page", "url": "https://raktimgg.github.io/worlddp-website/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.08775" }
+  ]
+}

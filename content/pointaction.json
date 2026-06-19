@@ -1,10 +1,8 @@
 {
   "title": "PointAction: 3D Points as Universal Action Representations for Robot Control",
-  "type": "paper",
   "summary": "PointAction introduces a framework that bridges video-generative models and robot control by jointly predicting RGB frames and dynamic 3D point maps, creating embodiment-agnostic action representations. A foundation video model first produces temporally consistent RGB and XYZ pointmaps; a diffusion-based decoder then translates point dynamics into executable robot commands, providing a structured interface between visual predictions and low-level actions. The two-stage approach enables cross-task and cross-embodiment transfer with minimal action supervision, demonstrated on real robot arms (YAM and xArm7) and the RoboCasa365 simulation benchmark.",
   "authors": ["Mutian Tong", "Han Jiang", "Qiao Feng", "Lingjie Liu", "Jiatao Gu"],
   "date": "2026-06-02",
-  "venue": "CVPR 2026 4D Vision Workshop",
   "tags": ["world-model", "video-prediction", "manipulation"],
   "links": [
     { "label": "Project Page", "url": "https://oriontmt.github.io/pointaction/" },

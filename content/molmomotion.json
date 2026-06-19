@@ -1,0 +1,14 @@
+{
+  "title": "MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction",
+  "summary": "MolmoMotion is a motion forecasting model that predicts future 3D trajectories of objects from video frames, marked 3D points, and textual action descriptions. It represents motion as object-attached 3D points in world space, enabling class-agnostic predictions across object types. The work introduces two model variants — an autoregressive version and a flow-matching variant — and shows strong performance on robotics planning and video generation downstream tasks. A large-scale dataset (MolmoMotion-1M) and the PointMotionBench benchmark are released alongside the model.",
+  "authors": ["Jianing Zhang", "Chenhao Zheng", "Yajun Yang", "Max Argus"],
+  "date": "2026-06-17",
+  "tags": ["video-prediction", "flow-matching", "planning", "dataset"],
+  "links": [
+    { "label": "Blog", "url": "https://huggingface.co/blog/allenai/molmomotion" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.18558" },
+    { "label": "Project Page", "url": "https://molmomotion.github.io/" },
+    { "label": "Code", "url": "https://github.com/allenai/molmo-motion" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/allenai/molmo-motion-1m" }
+  ]
+}

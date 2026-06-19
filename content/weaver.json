@@ -1,0 +1,12 @@
+{
+  "title": "WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+  "summary": "WEAVER is a world model architecture for robotic manipulation achieving strong performance across policy evaluation, policy improvement, and test-time planning. It targets three objectives — fidelity (physically accurate predictions), consistency (coherent long-horizon predictions), and efficiency (fast inference for planning) — using latent-space dynamics, sparse memory mechanisms, and efficient reward estimation. These choices enable downstream use without expensive image decoding.",
+  "authors": ["Arnav Kumar Jain", "Yilin Wu", "Jesse Farebrother", "Gokul Swamy", "Andrea Bajcsy"],
+  "date": "2026",
+  "tags": ["world-model", "manipulation", "planning", "reinforcement-learning"],
+  "links": [
+    { "label": "Project Page", "url": "https://arnavkj1995.github.io/WEAVER/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.13672" },
+    { "label": "Code", "url": "https://github.com/arnavkj1995/WEAVER" }
+  ]
+}

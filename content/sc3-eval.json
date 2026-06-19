@@ -1,0 +1,11 @@
+{
+  "title": "SC3-Eval: Evaluating Robot Foundation Models via Self-Consistent Video Generation",
+  "summary": "SC3-Eval adapts pre-trained robot video foundation models into policy evaluators by enforcing three types of consistency: forward-inverse dynamics consistency, cross-view consistency, and test-time consistency. The method addresses error accumulation in rollouts, multi-camera consistency, and generalization to unseen policy behaviors. Evaluated across seven real-world VLA policies, it achieves a closed-loop Pearson correlation of 0.929 and MMRV of 0.119, and reproduces actual failure modes observed in physical robot rollouts.",
+  "authors": ["Wei-Cheng Tseng", "Gashon Hussein", "Yuzhu Dong", "Allen Z. Ren", "Lucy X. Shi", "XuDong Wang", "Sergey Levine", "Zhaoshuo Li", "Jinwei Gu", "Florian Shkurti", "Ming-Yu Liu", "Quan Vuong"],
+  "date": "2026-06-17",
+  "tags": ["benchmark", "vla", "video-prediction", "generalist-policy"],
+  "links": [
+    { "label": "Project Page", "url": "https://weichengtseng.github.io/sc3-eval/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.18610" }
+  ]
+}

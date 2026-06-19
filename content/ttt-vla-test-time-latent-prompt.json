@@ -1,10 +1,8 @@
 {
   "title": "TTT-VLA: Test-Time Latent Prompt Optimization for Vision-Language-Action Models",
-  "type": "paper",
   "summary": "TTT-VLA introduces a test-time training framework for Vision-Language-Action (VLA) models that addresses distribution shifts encountered at deployment without retraining the policy. The method, Latent Prompt Optimization (LPO), learns a latent prompt as an additional conditioning signal via a proxy task during training; at deployment, only this prompt is optimized using self-supervised signals, leaving the underlying policy weights frozen. Experiments on SimplerEnv demonstrate consistent performance improvements across single- and multi-embodiment evaluation scenarios.",
   "authors": ["Wenbo Zhang", "Jianxiong Li", "Shuai Yang", "Sijin Chen", "Jiajun Liu", "Lingqiao Liu", "Xiao Ma"],
   "date": "2026-06-02",
-  "venue": "arXiv 2026",
   "tags": ["vla", "sim-to-real", "generalist-policy"],
   "links": [
     { "label": "arXiv", "url": "https://arxiv.org/abs/2606.03127" },

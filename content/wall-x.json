@@ -1,14 +1,12 @@
 {
   "title": "WALL-X: Embodied Foundation Models for General-Purpose Robots",
-  "type": "repo",
   "summary": "Wall-X is an open-source project by X-Square Robot developing embodied foundation models for general-purpose manipulation robots, aimed at capturing and compressing continuous, high-fidelity physical interaction data to establish a direct feedback loop between model decisions and physical experience. The repository provides training and inference code for the WALL model series, including WALL-OSS-0.5 (a deployable VLA), flow-matching and FAST action variants, and WALL-WM (a World Action Model coupling future-video imagination with action prediction at semantic event boundaries). The codebase integrates LeRobot data preparation, DMuon distributed training, FlashAttention, and WebSocket serving utilities.",
   "authors": ["X-Square Robot"],
   "date": "2025",
-  "venue": "arXiv 2025",
   "tags": ["generalist-policy", "vla", "world-model"],
   "links": [
     { "label": "Code", "url": "https://github.com/X-Square-Robot/wall-x" },
     { "label": "Project Page", "url": "https://x2robot.com/en/research" },
-    { "label": "Paper", "url": "https://arxiv.org/abs/2509.11766" }
+    { "label": "Paper (WALL-OSS)", "url": "https://arxiv.org/abs/2509.11766" }
   ]
 }

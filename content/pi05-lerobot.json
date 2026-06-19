@@ -1,14 +1,12 @@
 {
   "title": "π₀.₅ (Pi0.5): Open-World Generalization Policy — LeRobot Integration",
-  "type": "website",
   "summary": "This Hugging Face LeRobot documentation page covers the integration and finetuning of π₀.₅, Physical Intelligence's Vision-Language-Action model designed for open-world generalization. π₀.₅ advances over π₀ by co-training on heterogeneous data including multimodal web data, verbal instructions, cross-embodiment robot data, and approximately 400 hours of mobile manipulation demonstrations, enabling generalization across physical, semantic, and environmental levels. The LeRobot implementation achieves 97.5% average success on the LIBERO benchmark suite, matching or exceeding the original OpenPI reference results.",
   "authors": ["Physical Intelligence", "Hugging Face LeRobot Team"],
   "date": "2026",
-  "venue": "Hugging Face LeRobot docs",
   "tags": ["vla", "generalist-policy", "manipulation"],
   "links": [
     { "label": "Project Page", "url": "https://huggingface.co/docs/lerobot/en/pi05" },
-    { "label": "Blog", "url": "https://www.physicalintelligence.company/blog/pi05" },
+    { "label": "Blog", "url": "https://www.pi.website/blog/pi05" },
     { "label": "Code", "url": "https://github.com/Physical-Intelligence/openpi" },
     { "label": "Model Weights", "url": "https://huggingface.co/lerobot/pi05_base" }
   ]

@@ -1,0 +1,12 @@
+{
+  "title": "TDV: You Don't Need Strong Assumptions: Visual Representation Learning via Temporal Differences",
+  "summary": "Temporal Difference in Vision (TDV) is a self-supervised learning method for video that relies on the causal assumption that the past causes the future, without depending on augmentations or masking. The approach trains by enforcing that a frame's representation plus encoded motion equals the next frame's representation. TDV matches state-of-the-art recipes on dense spatial tasks while using weaker inductive biases than existing approaches.",
+  "authors": ["Ninad Daithankar", "Alexi Gladstone", "Yann LeCun", "Heng Ji"],
+  "date": "2026",
+  "tags": ["jepa", "video-prediction", "perception"],
+  "links": [
+    { "label": "Project Page", "url": "https://temporal-difference-vision.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.15956" },
+    { "label": "Code", "url": "https://github.com/ninaddaithankar/tdv" }
+  ]
+}

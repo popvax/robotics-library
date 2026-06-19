@@ -1,10 +1,8 @@
 {
   "title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?",
-  "type": "paper",
   "summary": "DIRECT addresses the challenge of efficiently allocating test-time compute for vision-language models used as high-level planners in embodied agents, observing that uniform scaling of chain-of-thought depth, model size, or memory history yields uneven and often diminishing gains alongside increased latency and cost. The system uses multimodal scene understanding to route compute adaptively per task across these three scaling axes, revealing distinct performance patterns for each. Physical robot experiments show DIRECT matches stronger models at substantially lower average latency, demonstrating that targeted compute allocation outperforms uniform scaling strategies for real-world robotic deployment.",
   "authors": ["Jadelynn Dao", "Milan Ganai", "Yasmina Abukhadra", "Ajay Sridhar", "Mozhgan Nasr Azadani", "Katie Luo", "Clark Barrett", "Jiajun Wu", "Chelsea Finn", "Marco Pavone"],
   "date": "2026-06-10",
-  "venue": "arXiv 2026",
   "tags": ["planning", "generalist-policy"],
   "links": [
     { "label": "Project Page", "url": "https://jadee-dao.github.io/direct/" },

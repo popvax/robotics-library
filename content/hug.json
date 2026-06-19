@@ -1,0 +1,13 @@
+{
+  "title": "HUG: Human Universal Grasping",
+  "summary": "HUG is a flow-matching model that generates diverse human grasps for objects in RGB-D images, trained on 1M-HUGs — an egocentric dataset of 1 million frames spanning 6,707 object instances. The model predicts grasps parameterized by wrist translation, rotation, and hand pose, which can be retargeted to various robot hands. HUG outperforms state-of-the-art grasping baselines by +23% and +34%, achieving 62% success on unseen objects in real home environments.",
+  "authors": ["Kevin Yuanbo Wu", "Tianxing Zhou", "Isaac Tu", "Billy Yan", "Irmak Guzey", "David Fouhey", "Dandan Shan", "Lerrel Pinto"],
+  "date": "2026",
+  "tags": ["grasping", "egocentric", "human-video", "flow-matching"],
+  "links": [
+    { "label": "Project Page", "url": "https://grasping.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.17054" },
+    { "label": "Code", "url": "https://github.com/KevinyWu/hug" },
+    { "label": "Dataset", "url": "https://huggingface.co/kevinywu/hug" }
+  ]
+}

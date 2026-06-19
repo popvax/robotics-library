@@ -1,0 +1,13 @@
+{
+  "title": "Volt: Volume Transformer: Revisiting Vanilla Transformers for 3D Scene Understanding",
+  "summary": "Volt is a vanilla Transformer adapted for 3D scene understanding that partitions 3D scenes into volumetric patches and processes them with global self-attention and 3D rotary positional embeddings. To address data scarcity in 3D, the authors propose a training recipe based on strong 3D augmentations, regularization, and distillation. Scaling experiments show that Volt benefits more from increased supervision than specialized 3D backbones.",
+  "authors": ["Kadir Yilmaz", "Adrian Kruse", "Tristan Höfer", "Daan de Geus", "Bastian Leibe"],
+  "date": "2026",
+  "tags": ["perception", "benchmark"],
+  "links": [
+    { "label": "Project Page", "url": "https://yilmazkadir.github.io/Volt/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2604.19609" },
+    { "label": "Code", "url": "https://github.com/YilmazKadir/Volt" },
+    { "label": "Model Weights", "url": "https://huggingface.co/KadirYilmaz/Volt/tree/main" }
+  ]
+}

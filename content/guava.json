@@ -1,0 +1,12 @@
+{
+  "title": "Guava: An Effective and Universal Harness for Embodied Manipulation",
+  "summary": "Guava is a framework for embodied tool use that combines iterative reasoning loops, semantic action abstractions, and multimodal observations. The approach distills frontier VLM capabilities into a compact 4B open-source model trained on fewer than 2K simulation trajectories, achieving strong zero-shot generalization across real-world manipulation tasks.",
+  "authors": ["Haowen Liu", "Xirui Li", "Shaoxiong Yao", "Peng Shi", "Tianyi Zhou", "Jia-Bin Huang", "Furong Huang", "Jiayuan Mao"],
+  "date": "2026",
+  "tags": ["manipulation", "imitation-learning", "generalist-policy", "sim-to-real"],
+  "links": [
+    { "label": "Project Page", "url": "https://guava-harness.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.18363" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2606.18363" }
+  ]
+}

@@ -1,10 +1,8 @@
 {
   "title": "OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics",
-  "type": "paper",
   "summary": "OSCAR is a video world model for robotics designed to generalize across diverse robot embodiments by unifying action conditioning via 2D kinematic-skeleton rendering as a shared representation. Built by fine-tuning the Cosmos-Predict2.5-2B model on a large-scale standardized data pipeline, it improves action-following fidelity and motion quality while enabling virtual policy evaluation without physical hardware. The approach addresses the fragmentation of embodiment-specific models by providing a single omni-embodiment framework compatible with multiple robot morphologies.",
   "authors": ["Zhuoyuan Wu", "Jun Gao"],
   "date": "2026-06-03",
-  "venue": "arXiv 2026",
   "tags": ["world-model", "video-prediction", "sim-to-real"],
   "links": [
     { "label": "Project Page", "url": "https://wuzy2115.github.io/oscar-project-page/" },

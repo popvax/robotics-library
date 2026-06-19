@@ -2,6 +2,7 @@
   "name": "robotics-library",
   "private": true,
   "version": "0.1.0",
+  "packageManager": "pnpm@11.5.2",
   "type": "module",
   "description": "A blazing-fast, fully client-side, fuzzy-searchable library of robotics papers, repos, sites and more.",
   "scripts": {

@@ -1,0 +1,12 @@
+{
+  "title": "Mirage: Latent Spatial Memory for Video World Models",
+  "summary": "Mirage is a video world modeling approach that stores static scene content as 3D latent tokens and reads or updates this cache during generation, avoiding the inefficient RGB render-and-reencode loop used in prior point-cloud memory approaches. The method achieves 10.57x faster generation and 55x lower 3D cache memory usage, with a 70.36 WorldScore average.",
+  "authors": ["Weijie Wang", "Haoyu Zhao", "Yifan Yang", "Feng Chen", "Zeyu Zhang", "Yefei He", "Zicheng Duan", "Donny Y. Chen", "Yuqing Yang", "Bohan Zhuang"],
+  "date": "2026",
+  "tags": ["world-model", "video-prediction", "planning", "perception"],
+  "links": [
+    { "label": "Project Page", "url": "https://microsoft.github.io/LatentSpatialMemory/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.09828" },
+    { "label": "Code", "url": "https://github.com/microsoft/LatentSpatialMemory" }
+  ]
+}

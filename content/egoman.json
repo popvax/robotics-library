@@ -1,0 +1,12 @@
+{
+  "title": "EgoMAN: Flowing from Reasoning to Motion: Learning 3D Hand Trajectory Prediction from Egocentric Human Interaction Videos",
+  "summary": "EgoMAN introduces a large-scale dataset of 219K 6DoF hand trajectories and 3M structured QA pairs covering semantic, spatial, and motion reasoning, derived from egocentric human interaction videos. The accompanying model uses a reasoning-to-motion framework that links vision-language reasoning and motion generation via a trajectory-token interface, enabling 3D hand trajectory prediction grounded in structured natural-language reasoning about human manipulation.",
+  "authors": ["Mingfei Chen", "Yifan Wang", "Zhengqin Li", "Homanga Bharadhwaj", "Yujin Chen", "Chuan Qin", "Ziyi Kou", "Yuan Tian", "Eric Whitmire", "Rajinder Sodhi", "Hrvoje Benko", "Eli Shlizerman", "Yue Liu"],
+  "date": "2025",
+  "tags": ["egocentric", "human-video", "dexterous-manipulation", "dataset"],
+  "links": [
+    { "label": "Project Page", "url": "https://egoman-project.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2512.16907" },
+    { "label": "Code", "url": "https://github.com/facebookresearch/egoman" }
+  ]
+}

@@ -1,15 +1,16 @@
 # PopVax Robotics Library
 
-A blazing-fast, fully client-side, fuzzy-searchable library of robotics research —
-papers, repos, datasets, blogs and more. No backend: every entry is bundled at build
-time, so the whole library is in memory the instant the page loads.
+A fast, fully client-side, fuzzy-searchable library of robotics research — papers, repos,
+datasets, blogs and more. No backend: every entry is bundled at build time, so the whole
+library is in memory the instant the page loads.
+
+**Live:** https://popvax.github.io/robotics-library/
 
 ## Stack
 
 - **Vite + React 18 + TypeScript**
-- **Tailwind CSS v4** + **shadcn/ui** (new-york, neutral, sharp corners) + **lucide** icons
-- **Fuse.js** for fuzzy search · **next-themes** for dark mode · **zod** for content validation
-- Design language mirrors the `bi-openarm` console (square corners, neutral oklch palette).
+- **Tailwind CSS v4** (sharp, neutral, Satoshi) · **Fuse.js** fuzzy search · **motion** animations
+- **zod**-validated content · **radix-ui** for the tag dropdown
 
 ## Develop
 
@@ -20,36 +21,30 @@ pnpm validate     # check every content/*.json against the schema
 pnpm build        # typecheck + production build to dist/
 ```
 
-> First install only: pnpm withholds esbuild's build script by default; this repo
-> already allow-lists it via `pnpm.onlyBuiltDependencies`, so `pnpm install` runs it.
-
 ## Adding entries
 
-The library is just a folder of JSON files in [`content/`](./content). One file per
-entry, filename = id. Drop a link to an agent and have it follow
-[`content/README.md`](./content/README.md) — it extracts the title, writes an
-abstract-style description, collects the links, and tags the entry. Then:
-
-```bash
-pnpm validate
-```
+The library is just a folder of JSON files in [`content/`](./content) — one file per
+entry, filename = id. Drop a link (paper, repo, site, or a tweet/thread) to an agent and
+have it follow **[`AGENTS.md`](./AGENTS.md)**, which defines the schema, the
+extract‑never‑invent rule, the tweet‑thread flow, and the tag set. Then `pnpm validate`.
 
 ## How it works
 
 ```
-content/<id>.json        ← the data (the only thing you edit to curate)
-src/lib/schema.ts         ← zod schema + Item type
-src/lib/items.ts          ← import.meta.glob(content) → validated, sorted array
-src/lib/search.ts         ← Fuse.js index (title > tags > summary > authors)
-src/features/library/     ← SearchBar · TypeFilter · TagFilter · ItemList · ItemRow
+content/<id>.json          ← the data (curate this)
+src/lib/schema.ts           ← zod schema + Item type
+src/lib/items.ts            ← import.meta.glob(content) → validated, sorted array
+src/lib/search.ts           ← Fuse.js index (title > tags > summary > authors)
+src/features/library/       ← Library · ItemRow · ItemList · TagPicker
+scripts/validate.ts         ← pnpm validate
 ```
 
-- **Search:** in-memory fuzzy match, weighted by field. Press `/` to focus.
-- **Filters:** click a type or a `#tag` to narrow (tags combine with AND).
-- **Sort:** featured first, then newest.
+- **Search:** in-memory fuzzy match, weighted by field (press `/` or the search icon).
+- **Filters:** tag dropdown (OR) + a `★` bookmarks filter (stored in `localStorage`).
+- **Sharable:** search + filters live in the URL query string.
 
 ## Deploy
 
-It's a static site — `pnpm build` emits `dist/`, deployable to any static host
-(GitHub Pages, Vercel, Netlify, Cloudflare Pages). For a GitHub Pages project site,
-set `base: '/<repo>/'` in `vite.config.ts`.
+GitHub Pages via Actions (`.github/workflows/deploy.yml`): every push to `main` builds
+with pnpm and publishes `dist/`. The project is served under `/robotics-library/`, so
+`vite.config.ts` sets `base` to that for production builds (dev stays at `/`).

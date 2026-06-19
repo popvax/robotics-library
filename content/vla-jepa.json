@@ -1,10 +1,8 @@
 {
   "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
-  "type": "paper",
   "summary": "VLA-JEPA introduces a JEPA-style pretraining framework for vision-language-action policies that avoids pixel-space reconstruction biases by using leakage-free state prediction, where future information serves only as supervision targets and not as inputs. The approach learns dynamics abstractions in latent space and employs a streamlined two-stage training recipe. The method demonstrates improved performance on robotics benchmarks relative to prior VLA approaches.",
   "authors": ["Jingwen Sun", "Wenyao Zhang", "Zekun Qi", "Shaojie Ren", "Zezhi Liu", "Hanxin Zhu", "Guangzhong Sun", "Xin Jin", "Zhibo Chen"],
   "date": "2026",
-  "venue": "arXiv 2026",
   "tags": ["vla", "jepa", "world-model"],
   "links": [
     { "label": "Project Page", "url": "https://ginwind.github.io/VLA-JEPA/" },

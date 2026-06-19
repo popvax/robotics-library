@@ -1,10 +1,8 @@
 {
-  "title": "FASTER: Value-Guided Sampling for Efficient Test-Time Scaling in Diffusion-Based RL Policies",
-  "type": "paper",
+  "title": "FASTER: Value-Guided Sampling for Fast RL",
   "summary": "FASTER addresses the computational expense of test-time scaling in diffusion-based reinforcement learning policies by modeling the denoising of multiple action candidates and their selection as a Markov Decision Process that progressively filters candidates before denoising is complete. A policy and value function learned in the denoising space predict the downstream value of action candidates, enabling early elimination of poor candidates while maintaining high returns. The method is lightweight, integrates with existing generative RL algorithms, and demonstrates consistent improvements across long-horizon manipulation tasks in both online and batch-online settings while reducing compute for pretrained vision-language-action models.",
   "authors": ["Perry Dong", "Alexander Swerdlow", "Dorsa Sadigh", "Chelsea Finn"],
   "date": "2026-04-21",
-  "venue": "arXiv 2026",
   "tags": ["reinforcement-learning", "diffusion", "manipulation"],
   "links": [
     { "label": "Project Page", "url": "https://pd-perry.github.io/faster/" },

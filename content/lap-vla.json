@@ -1,16 +1,13 @@
 {
-  "title": "LAP: Language-Action Pre-training Enables Zero-Shot Cross-Embodiment Transfer",
-  "type": "paper",
+  "title": "LAP: Language-Action Pre-Training Enables Zero-shot Cross-Embodiment Transfer",
   "summary": "LAP is a vision-language-action model that achieves zero-shot generalization to unseen robot embodiments by representing low-level actions in natural language during pre-training, unifying action learning with visual question answering under a single language-modeling objective. By supervising the VLA backbone with natural-language action descriptions, LAP bridges the gap between action semantics and language representations, enabling cross-embodiment transfer without target-embodiment demonstrations. LAP-3B achieves over 50% success rate on unseen embodiments zero-shot and requires approximately 2.5x fewer demonstrations for fine-tuning than comparable baselines.",
   "authors": ["Lihan Zha", "Asher J. Hancock", "Mingtong Zhang", "Tenny Yin", "Yixuan Huang", "Dhruv Shah", "Allen Z. Ren", "Anirudha Majumdar"],
   "date": "2026",
-  "venue": "arXiv 2026",
   "tags": ["vla", "generalist-policy"],
   "links": [
     { "label": "Project Page", "url": "https://lap-vla.github.io" },
     { "label": "arXiv", "url": "https://arxiv.org/abs/2602.10556" },
     { "label": "Code", "url": "https://github.com/lihzha/lap" },
     { "label": "Dataset", "url": "https://huggingface.co/collections/lihzha/lap" }
-  ],
-  "featured": true
+  ]
 }

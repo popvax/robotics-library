@@ -13,8 +13,7 @@ export function createFuse(items: Item[]): Fuse<Item> {
       { name: 'tags', weight: 0.3 },
       { name: 'summary', weight: 0.18 },
       { name: 'authors', weight: 0.1 },
-      { name: 'venue', weight: 0.06 },
-      { name: 'type', weight: 0.05 },
+      { name: 'links.url', weight: 0.08 }, // match by host/org, e.g. "nvidia", "allenai", "github"
     ],
   });
 }

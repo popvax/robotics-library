@@ -1,0 +1,13 @@
+{
+  "title": "EgoInfinity: A Web-Scale 4D Hand-Object Interaction Data Engine for Any-View Robot Retargeting and Video-to-Action Robot Learning",
+  "summary": "EgoInfinity is a modular pipeline that converts internet-scale monocular RGB videos into robot-executable manipulation data by reconstructing metric hand trajectories and object geometry without human annotation. The system retargets recovered motions onto diverse robot morphologies, enabling any-view robot learning from web-scale footage and addressing the scalability bottleneck of robot data collection by leveraging everyday human manipulation videos.",
+  "authors": ["Gaotian Wang", "Kejia Ren", "Andrew Morgan", "Yiting Chen", "Howard H. Qian", "Podshara Chanrungmaneekul", "Kaiyu Hang"],
+  "date": "2026",
+  "tags": ["human-video", "egocentric", "dexterous-manipulation", "dataset"],
+  "links": [
+    { "label": "Project Page", "url": "https://rice-robotpi-lab.github.io/EgoInfinity/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.17385" },
+    { "label": "Code", "url": "https://github.com/Rice-RobotPI-Lab/EgoInfinity" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/Rice-RobotPI-Lab/egoinfinity" }
+  ]
+}

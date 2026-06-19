@@ -1,0 +1,10 @@
+{
+  "title": "ENPIRE: Agentic Robot Policy Self-Improvement in the Real World",
+  "summary": "ENPIRE is a framework enabling coding agents to autonomously improve robotic manipulation policies through a repeatable feedback loop. It integrates four core modules: Environment (automatic reset and verification), Policy Improvement (refinement algorithms), Rollout (physical robot evaluation), and Evolution (agent analysis and code optimization). Frontier coding agents achieved a 99% success rate on challenging dexterous manipulation tasks including PushT, pin insertion, and zip-tie cutting. The framework supports heuristic learning, behavior cloning, and offline/online RL, and scales across robot fleets.",
+  "authors": ["Wenli Xiao", "Jia Xie", "Tonghe Zhang", "Haotian Lin", "Letian Fu", "Haoru Xue", "Jalen Lu", "Yi Yang", "Cunxi Dai", "Zi Wang", "Jimmy Wu", "Guanzhi Wang", "S. Shankar Sastry", "Ken Goldberg", "Linxi Fan", "Yuke Zhu", "Guanya Shi"],
+  "date": "2026-06-16",
+  "tags": ["reinforcement-learning", "dexterous-manipulation", "imitation-learning", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://research.nvidia.com/labs/gear/enpire/" }
+  ]
+}

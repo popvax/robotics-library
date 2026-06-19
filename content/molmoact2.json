@@ -1,17 +1,14 @@
 {
-  "title": "MolmoAct2: Action Reasoning Models for Real-World Deployment",
-  "type": "repo",
-  "summary": "MolmoAct2 is an action reasoning model for robot control and real-world deployment, built on the Molmo2-ER embodied-reasoning vision-language backbone. It integrates robot state and action modeling with a flow-matching continuous action expert for closed-loop manipulation. The system unifies visual reasoning and low-level motor control, enabling deployment across diverse real-world manipulation tasks.",
-  "authors": ["Haoquan Fang", "Jiafei Duan", "Donovan Clay", "Sam Wang", "Shuo Liu", "Weikai Huang", "Xiang Fan", "Wei-Chuan Tsai", "Shirui Chen", "Yi Ru Wang", "Joyce Chai", "Zhongzheng Ren", "Ali Farhadi", "Dieter Fox", "Ranjay Krishna"],
+  "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+  "summary": "MolmoAct2 is a fully open action reasoning model built for real-world robot deployment. It introduces MolmoER, a vision-language backbone specialised for spatial and embodied reasoning, and grafts a flow-matching continuous-action expert onto a discrete-token VLM via per-layer KV-cache conditioning. Additional contributions include OpenFAST, an open-weight action tokenizer trained across five embodiments, and MolmoThink, an adaptive-depth reasoning variant. Across simulation and real-world benchmarks it outperforms baselines including π0.5, while MolmoER surpasses strong embodied-reasoning models across a suite of benchmarks.",
+  "authors": ["Haoquan Fang", "Jiafei Duan", "Donovan Clay", "Sam Wang", "Shuo Liu", "Weikai Huang", "Xiang Fan", "Wei-Chuan Tsai", "Shirui Chen", "Yi Ru Wang", "Shanli Xing", "Jaemin Cho", "Jae Sung Park", "Ainaz Eftekhar", "Peter Sushko", "Karen Farley", "Angad Wadhwa", "Cole Harrison", "Winson Han", "Ying-Chun Lee", "Eli VanderBilt", "Rose Hendrix", "Suveen Ellawela", "Lucas Ngoo", "Joyce Chai", "Zhongzheng Ren", "Ali Farhadi", "Dieter Fox", "Ranjay Krishna"],
   "date": "2026",
-  "venue": "arXiv 2026",
   "tags": ["vla", "manipulation", "flow-matching"],
   "links": [
     { "label": "Code", "url": "https://github.com/allenai/molmoact2" },
     { "label": "Paper", "url": "https://arxiv.org/abs/2605.02881" },
     { "label": "Blog", "url": "https://allenai.org/blog/molmoact2" },
     { "label": "Dataset", "url": "https://huggingface.co/collections/allenai/molmoact2-datasets-69f81e316ec3daafe3f9555c" },
-    { "label": "Demo", "url": "https://huggingface.co/collections/allenai/molmoact2-models-69f81e05242e2499606b1be6" }
-  ],
-  "featured": true
+    { "label": "Models", "url": "https://huggingface.co/collections/allenai/molmoact2-models-69f81e05242e2499606b1be6" }
+  ]
 }

@@ -1,0 +1,11 @@
+{
+  "title": "Do as I Do: Dexterous Manipulation Data from Everyday Human Videos",
+  "summary": "This work introduces an algorithm that reconstructs hand-object interactions from egocentric and exocentric in-the-wild video and retargets these estimates into action sequences executable by multi-fingered dexterous robotic hands. It addresses two obstacles: accurately estimating hand-object interactions from monocular RGB footage, and bridging the embodiment gap between human and robotic platforms. Experiments show improvements over prior methods in interaction estimation and trajectory extraction, giving a scalable framework for collecting human manipulation data for robot training.",
+  "authors": ["Bhawna Paliwal", "Haritheja Etukuru", "William Liang", "Pieter Abbeel", "Nur Muhammad Mahi Shafiullah", "Jitendra Malik"],
+  "date": "2026-06-17",
+  "tags": ["dexterous-manipulation", "human-video", "egocentric", "imitation-learning"],
+  "links": [
+    { "label": "Project Page", "url": "https://do-as-i-do.com/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.19333" }
+  ]
+}

@@ -1,15 +1,12 @@
 {
   "title": "TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics",
-  "type": "paper",
-  "summary": "TOPReward introduces a zero-shot progress estimator for robotic manipulation by extracting task progress signals directly from the token probabilities of video Vision-Language Models (VLMs), requiring no reward-specific training. The method is evaluated on two benchmarks: Open X-Embodiment (780 episodes across 39 datasets) and the newly introduced ManiRewardBench (497 episodes across multiple robot platforms), demonstrating strong success detection and improved behavior cloning through reward-aligned training.",
+  "summary": "TOPReward is a probabilistically grounded temporal value function that leverages the latent world knowledge of pretrained video Vision-Language Models (VLMs) to estimate robotic task progress as a zero-shot reward signal. Rather than prompting a VLM to output progress values directly — which is prone to numerical misrepresentation — TOPReward reads task progress from the VLM's internal token logits. Across 130+ real-world tasks and multiple robot platforms it achieves high value-order correlation, far exceeding prior baselines on the same open model, and supports downstream uses such as success detection and reward-aligned behavior cloning.",
   "authors": ["Shirui Chen", "Cole Harrison", "Ying-Chun Lee", "Angela Jin Yang", "Zhongzheng Ren", "Lillian J. Ratliff", "Jiafei Duan", "Dieter Fox", "Ranjay Krishna"],
   "date": "2026",
-  "venue": "arXiv 2026",
   "tags": ["reward-design", "benchmark", "manipulation"],
   "links": [
     { "label": "Project Page", "url": "https://topreward.github.io/webpage/" },
     { "label": "arXiv", "url": "https://arxiv.org/abs/2602.19313" },
-    { "label": "Paper", "url": "https://arxiv.org/pdf/2602.19313" },
     { "label": "Code", "url": "https://github.com/TOPReward/TOPReward" }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "title": "RF-DETR: Neural Architecture Search for Real-Time Detection Transformers",
+  "summary": "RF-DETR is a lightweight detection transformer that uses weight-sharing neural architecture search (NAS) to discover accuracy–latency Pareto-optimal configurations for a target dataset without retraining from scratch. By fine-tuning a pre-trained base and evaluating thousands of configurations, it outperforms prior real-time methods: RF-DETR (nano) reaches 48.0 AP on COCO, and RF-DETR (2x-large) is the first real-time detector to exceed 60 AP on COCO while also beating GroundingDINO (tiny) on Roboflow100-VL at roughly 20x the speed.",
+  "authors": ["Isaac Robinson", "Peter Robicheaux", "Matvei Popov", "Deva Ramanan", "Neehar Peri"],
+  "date": "2026",
+  "tags": ["perception", "benchmark"],
+  "links": [
+    { "label": "Code", "url": "https://github.com/roboflow/rf-detr" },
+    { "label": "Project Page", "url": "https://rfdetr.roboflow.com/latest/" },
+    { "label": "Paper", "url": "https://arxiv.org/abs/2511.09554" }
+  ]
+}

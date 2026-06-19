@@ -1,10 +1,8 @@
 {
-  "title": "Difference-Aware Retrieval Policies for Imitation Learning",
-  "type": "paper",
-  "summary": "DARP is a retrieval-based imitation learning approach that improves policy performance by retrieving nearest-neighbor demonstrations and computing difference vectors between query and retrieved neighbor states. These difference vectors are processed through a neural network and aggregated with retrieved action predictions to produce the final policy output. The method achieves a 2.1x improvement in real robot success rate on FurnitureBench (44.0% to 92.0%) and 1.5x–5.2x gains in simulation across 10+ tasks, and is compatible with diffusion policies.",
+  "title": "DARP: Difference-Aware Retrieval Policies for Imitation Learning",
+  "summary": "DARP is a semi-parametric, retrieval-based imitation-learning method that reparameterizes the problem in terms of local neighborhood structure: it predicts actions from the k-nearest expert demonstrations, their actions, and the difference vectors between neighbor and query states. It needs no extra data collection, online expert feedback, or task-specific knowledge, and yields consistent 15–46% improvements over standard behavior cloning across diverse domains. On FurnitureBench it improves real-robot success 2.1x (44.0% to 92.0%) and is compatible with diffusion policies.",
   "authors": ["Quinn Pfeifer", "Ethan Pronovost", "Paarth Shah", "Khimya Khetarpal", "Siddhartha Srinivasa", "Abhishek Gupta"],
   "date": "2026",
-  "venue": "ICLR 2026",
   "tags": ["imitation-learning", "manipulation", "diffusion"],
   "links": [
     { "label": "Project Page", "url": "https://weirdlabuw.github.io/darp-site/" },

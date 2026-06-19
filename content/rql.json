@@ -1,0 +1,12 @@
+{
+  "title": "RQL: Reversal Q-Learning",
+  "summary": "Reversal Q-Learning (RQL) is a method for flow-based offline reinforcement learning that learns value functions over both complete and partially-generated actions by applying flow reversal — following the flow ODE backward from dataset actions. This avoids expanding the value-learning horizon that undermines off-policy RL, and trains policies directly via reparameterized action-gradient refinement. Across 50 simulated robotic tasks, RQL achieves the best average performance among state-of-the-art flow-based offline RL algorithms.",
+  "authors": ["Aditya Oberai", "Seohong Park", "Sergey Levine"],
+  "date": "2026",
+  "tags": ["reinforcement-learning", "flow-matching", "diffusion", "reward-design"],
+  "links": [
+    { "label": "Project Page", "url": "https://aober.ai/rql/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.17551" },
+    { "label": "Code", "url": "https://github.com/aoberai/rql" }
+  ]
+}

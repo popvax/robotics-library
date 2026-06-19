@@ -1,11 +1,11 @@
 {
-  "title": "S2 (AIRoA)",
-  "type": "website",
-  "summary": "This URL (s2.airoa.io) is associated with the AI Robot Association (AIRoA), a Japanese organization focused on developing open platforms and datasets for robotics foundation models and general-purpose robot development. The specific content of the S2 project page could not be retrieved due to access restrictions (HTTP 403). Based on context, AIRoA is known for the AIRoA MoMa large-scale mobile manipulation dataset and VLA pipeline research.",
-  "authors": ["AI Robot Association (AIRoA)"],
-  "tags": ["dataset", "manipulation"],
+  "title": "S2: See Less, Specify More — Visual Evidence Budgets for Generalizable VLAs",
+  "summary": "S2 is a cleaner executor interface for generalizable vision-language-action models: it preserves the goal with local language guidance and restricts control to a learned \"visual evidence budget.\" Instead of relying on native attention or hand-labeled crops, S2 imposes an explicit budget on base and wrist visual tokens and learns soft keep-masks from the action loss alone, with no mask annotations — the retained evidence centers on task-sufficient cues such as objects, contact regions, end effectors, and destination context. Across 8 real-robot tasks on the TX-G2 and HSR platforms it raises mean subtask success from 54.2% to 79.0%.",
+  "authors": ["Yueh-Hua Wu", "Tatsuya Matsushima", "Kei Ota"],
+  "date": "2026",
+  "tags": ["vla", "manipulation", "perception"],
   "links": [
     { "label": "Project Page", "url": "https://s2.airoa.io/" },
-    { "label": "Blog", "url": "https://www.airoa.org/" }
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.02735" }
   ]
 }

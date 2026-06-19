@@ -1,10 +1,8 @@
 {
   "title": "What Matters When Cotraining Robot Manipulation Policies on Everyday Human Videos?",
-  "type": "paper",
   "summary": "This paper investigates how everyday internet videos can improve robot manipulation policy training through co-training. The key finding is that hand-pose quality significantly affects transfer, but even with accurate hand poses, an inherent motion gap between human and robot embodiments hinders transfer unless vision and policy networks specialize per embodiment. The authors introduce TriHands, a dataset of cooking videos with triangulated 3D hand keypoints from multi-view synchronized cameras, and demonstrate a 29.7% absolute success-rate improvement in low-robot-data regimes across six manipulation tasks.",
   "authors": ["Richard Li", "Aditya Prakash", "Andrew Wen", "Saurabh Gupta", "Yilun Du", "Pulkit Agrawal"],
   "date": "2026",
-  "venue": "arXiv 2026",
   "tags": ["human-video", "imitation-learning", "manipulation"],
   "links": [
     { "label": "Project Page", "url": "https://richardrl.github.io/what-matters-cotraining-human-videos/" },

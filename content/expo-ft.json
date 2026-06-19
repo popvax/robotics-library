@@ -1,15 +1,12 @@
 {
   "title": "EXPO-FT: Sample-Efficient Reinforcement Learning Finetuning for Vision-Language-Action Models",
-  "type": "paper",
-  "summary": "EXPO-FT is a method for finetuning pretrained Vision-Language-Action (VLA) policies using online reinforcement learning with minimal real-world interaction. It introduces an edit actor that predicts residual corrections to sampled action chunks and a Q-function for selecting refined action proposals, enabling sample-efficient policy improvement. The approach supports operator overrides for failure states and is designed to substantially reduce the number of real-world rollouts needed to adapt pretrained VLA models to new tasks.",
+  "summary": "EXPO-FT is a method for stable, sample-efficient reinforcement-learning finetuning of pretrained Vision-Language-Action (VLA) policies. Pretrained VLAs often fall short of deployment reliability, and prior RL either trains from scratch or finetunes VLAs without the sample efficiency real deployment needs. On precise, dynamic manipulation tasks, EXPO-FT reaches perfect task performance (30/30 successes) within an average of 19.1 minutes of online robot data, outperforming RL-from-scratch and prior VLA-finetuning baselines.",
   "authors": ["Perry Dong", "Kuo-Han Hung", "Tian Gao", "Dorsa Sadigh", "Chelsea Finn"],
   "date": "2026",
-  "venue": "arXiv 2026",
   "tags": ["vla", "reinforcement-learning", "manipulation"],
   "links": [
     { "label": "Project Page", "url": "https://pd-perry.github.io/expo-ft/" },
     { "label": "arXiv", "url": "https://arxiv.org/abs/2605.25477" },
-    { "label": "Paper", "url": "https://arxiv.org/pdf/2605.25477" },
     { "label": "Code", "url": "https://github.com/pd-perry/expo-ft/" }
   ]
 }

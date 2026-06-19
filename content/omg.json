@@ -1,0 +1,12 @@
+{
+  "title": "OMG: Omni-Modal Motion Generation for Generalist Humanoid Control",
+  "summary": "OMG converts diverse human intent signals — language, audio, and human reference motion — into executable whole-body trajectories for humanoid robot control. The system employs a generator-tracker hierarchy where OMG-DiT predicts future motions from multi-modal conditions, which a motion tracker converts to physically executable robot trajectories. The accompanying OMG-Data dataset comprises 1,174.66 hours of robot-executable omni-modal motion data.",
+  "authors": ["Siqiao Huang", "Kun-Ying Lee", "Dongming Qiao", "Guanqi He", "Zhenyu Wang", "Yitang Li", "Shaoting Zhu", "Hang Zhao"],
+  "date": "2026",
+  "tags": ["humanoid", "imitation-learning", "diffusion", "dataset"],
+  "links": [
+    { "label": "Project Page", "url": "https://tsinghua-mars-lab.github.io/OMG/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.10340" },
+    { "label": "Code", "url": "https://github.com/Tsinghua-MARS-Lab/OMG" }
+  ]
+}

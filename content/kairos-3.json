@@ -1,0 +1,10 @@
+{
+  "title": "Kairos 3.0: A Unified Cross-Embodiment World Model",
+  "summary": "Kairos 3.0 is a unified cross-embodiment world model that uses physical and causal laws as its cognitive foundation. Its 4B-parameter architecture employs a custom hybrid linear attention operator to unify multimodal understanding, generation, and action prediction in a single end-to-end pipeline, integrating real-robot interaction, structured human behavior, and chain-of-thought data. The hybrid linear-attention operator cuts attention's temporal complexity from O(n^2) to O(n), which the authors say enables the first real-time on-robot inference for an open-source world model.",
+  "date": "2026",
+  "tags": ["world-model", "generalist-policy", "video-prediction"],
+  "links": [
+    { "label": "Code", "url": "https://github.com/kairos-agi/kairos-sensenova" },
+    { "label": "Models", "url": "https://huggingface.co/collections/kairos-agi/kairos30" }
+  ]
+}

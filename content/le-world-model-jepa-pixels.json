@@ -1,10 +1,8 @@
 {
   "title": "LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels",
-  "type": "paper",
   "summary": "LeWorldModel presents the first Joint-Embedding Predictive Architecture (JEPA) that trains stably end-to-end directly from raw pixels using only two loss terms, eliminating the instabilities that have historically prevented pixel-level JEPA training. The resulting world model achieves competitive performance on downstream control tasks while running on a single GPU and planning approximately 48 times faster than foundation-model-based world models. Probing experiments confirm that the learned latent space captures meaningful physical structure, and the model demonstrates surprise-detection capabilities relevant to model-predictive control.",
   "authors": ["Lucas Maes", "Quentin Le Lidec", "Damien Scieur", "Yann LeCun", "Randall Balestriero"],
   "date": "2026-03-13",
-  "venue": "arXiv 2026",
   "tags": ["world-model", "jepa", "planning"],
   "links": [
     { "label": "Project Page", "url": "https://le-wm.github.io/" },
@@ -12,6 +10,5 @@
     { "label": "Paper", "url": "https://arxiv.org/pdf/2603.19312v1" },
     { "label": "Code", "url": "https://github.com/lucas-maes/le-wm" },
     { "label": "Dataset", "url": "https://hf.co/collections/quentinll/lewm" }
-  ],
-  "featured": true
+  ]
 }
