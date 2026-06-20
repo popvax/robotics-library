@@ -1,0 +1,12 @@
+{
+  "title": "Robots Need More than VLA and World Models",
+  "summary": "This position paper argues that generalist robot intelligence is not only a policy-scaling problem — more demonstrations and larger Vision-Language-Action models — but is bottlenecked by the absence of mechanisms that convert the world's abundant unstructured behavioural data (human motion, internet video, simulation rollouts, interactive demonstrations) into grounded robot supervision. It identifies four missing components for the next generation of robotics: data interfaces for autolabelling unstructured behaviour, embodiment interfaces for retargeting human motion to robot actions, world-model interfaces for physics-grounded 3D reasoning, and reward interfaces for inferring task progress and success from video and language. The authors survey recent progress in robot foundation models, cross-embodiment datasets, learning from video, world models, and reward modelling, and propose a research agenda for systems that learn from the broader physical world rather than robot demonstrations alone.",
+  "authors": ["Elis Karcini", "Faisal Mehrban", "Quang Nguyen", "Mac Schwager", "Arash Ajoudani", "Cesar Cadena", "Jan Peters", "Marco Hutter", "Haitham Bou-Ammar"],
+  "date": "2026-06-04",
+  "starred": true,
+  "tags": ["vla", "world-model", "human-video", "reward-design"],
+  "links": [
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.06556" },
+    { "label": "Paper", "url": "https://arxiv.org/pdf/2606.06556" }
+  ]
+}

@@ -3,6 +3,7 @@
   "summary": "DiscreteRTC addresses the asynchronous execution problem in robotic control by observing that discrete diffusion policies, which generate actions via iterative unmasking, are natural asynchronous executors. Unlike flow-matching real-time chunking, which needs specialized fine-tuning, heuristic guidance, and extra computation, DiscreteRTC requires no additional code to enable async inpainting because inpainting is native to discrete diffusion. Early stopping provides adaptive guidance and keeps inference cost close to generating from scratch, yielding higher success rates on dynamic real-world tasks than flow-matching RTC baselines.",
   "authors": ["Pengcheng Wang", "Kaiwen Hong", "Chensheng Peng", "Katherine Driggs-Campbell", "Masayoshi Tomizuka", "Chenfeng Xu", "Chen Tang"],
   "date": "2026",
+  "starred": true,
   "tags": ["diffusion", "manipulation"],
   "links": [
     { "label": "Project Page", "url": "https://outsider86.github.io/DiscreteRTCSite/" },

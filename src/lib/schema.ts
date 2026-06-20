@@ -18,6 +18,7 @@ export const ItemSchema = z.object({
   authors: z.array(z.string().min(1)).default([]),
   links: z.array(LinkSchema).default([]),
   date: z.string().optional(),
+  starred: z.boolean().optional(),
 });
 
 /** The shape the app consumes — `id` is guaranteed present after loading. */

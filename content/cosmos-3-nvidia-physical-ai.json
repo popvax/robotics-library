@@ -3,6 +3,7 @@
   "summary": "NVIDIA Cosmos 3 is a unified foundation model (an 'omni-model') that integrates world generation, physical reasoning, and action generation into a single system using a Mixture-of-Transformers (MoT) architecture. Two variants are released: Cosmos 3 Nano (16B parameters: 8B reasoner + 8B generator) for efficient edge inference, and Cosmos 3 Super (64B parameters: 32B reasoner + 32B generator) for large-scale deployments. The model is open-sourced on Hugging Face and targets robotics, autonomous vehicles, and smart spaces.",
   "authors": ["NVIDIA"],
   "date": "2026-06-01",
+  "starred": true,
   "tags": ["world-model", "generalist-policy", "video-prediction"],
   "links": [
     { "label": "Blog", "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" },

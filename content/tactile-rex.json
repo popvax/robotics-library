@@ -1,0 +1,12 @@
+{
+  "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+  "summary": "T-Rex pushes the frontier of tactile-reactive dexterous manipulation, addressing why current Vision-Language-Action (VLA) models largely overlook touch or encode it only with static cues. It contributes a large-scale 100-hour tactile-rich dataset collected via a data-efficient recipe centered on elementary motor primitives, plus a variable-rate Mixture-of-Transformers (MoT) architecture with a temporal tactile VQ-VAE encoder that exploits high-frequency touch signals without sacrificing existing VLA capabilities. Across 12 manipulation tasks requiring delicate force control and deformable-object handling, the tactile-reactive policies achieve over 30% higher average success rate than the strongest baseline.",
+  "authors": ["Dantong Niu", "Zhuoyang Liu", "Zekai Wang", "Boning Shao", "Zhao-Heng Yin", "Anirudh Pai", "Yuvan Sharma", "Stefano Saravalle", "Ruijie Zheng", "Jing Wang", "Ryan Punamiya", "Mengda Xu", "Yuqi Xie", "Yunfan Jiang", "Letian Fu", "Konstantinos Kallidromitis", "Matteo Gioia", "Junyi Zhang", "Jiaxin Ge", "Haiwen Feng", "Fabio Galasso", "Wei Zhan", "David M. Chan", "Yutong Bai", "Roei Herzig", "Jiahui Lei", "Fei-Fei Li", "Ken Goldberg", "Jitendra Malik", "Pieter Abbeel", "Yuke Zhu", "Danfei Xu", "Jim Fan", "Trevor Darrell"],
+  "date": "2026-06-15",
+  "tags": ["dexterous-manipulation", "vla", "dataset"],
+  "links": [
+    { "label": "Project Page", "url": "https://tactile-rex.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.17055" },
+    { "label": "Code", "url": "https://github.com/ZhuoyangLiu2005/T-Rex" }
+  ]
+}

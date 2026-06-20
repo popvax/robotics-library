@@ -1,0 +1,13 @@
+{
+  "title": "ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?",
+  "summary": "ImageWAM asks whether World Action Models (WAMs) really need video generation to bridge visual world modeling and robot control — full future-video prediction is expensive, spends capacity on action-irrelevant appearance, and can hallucinate misleading frames. Instead, ImageWAM uses a pretrained image-editing model as the policy backbone (editing is naturally source-grounded, instruction-guided, and change-centric), but at inference it never decodes the edited frame: it takes the KV caches from a single image-editing forward pass as compact world-action context and feeds them to a flow-matching action expert that generates future robot actions. It reports strong policy performance — 93.38% on RoboTwin 2.0, 98.4% on LIBERO, and 83.1% on LIBERO-Plus — while saving 84.7% of FLOPs and giving a 4.1x latency speedup over video-generation WAMs.",
+  "authors": ["Yuyang Zhang", "Wenyao Zhang", "Zekun Qi", "He Zhang", "Haitao Lin", "Jingbo Zhang", "Yao Mu", "Xiaokang Yang", "Wenjun Zeng", "Xin Jin"],
+  "date": "2026",
+  "starred": true,
+  "tags": ["world-model", "vla", "manipulation", "flow-matching"],
+  "links": [
+    { "label": "Project Page", "url": "https://zhangwenyao1.github.io/ImageWAM/" },
+    { "label": "Code", "url": "https://github.com/yuyangalin/ImageWAM" },
+    { "label": "Models", "url": "https://huggingface.co/collections/yuyangalin/imagewam" }
+  ]
+}

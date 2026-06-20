@@ -1,0 +1,13 @@
+{
+  "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo",
+  "summary": "DexJoCo is a benchmark and toolkit for task-oriented dexterous manipulation on MuJoCo, comprising 11 functionally grounded tasks that target tool-use, bimanual coordination, long-horizon execution, and reasoning — capabilities that distinguish dexterous hands from parallel grippers and that existing benchmarks underrepresent. It includes a low-cost data collection system and 1.1K collected trajectories across the tasks, with domain-randomization support for robustness evaluation. Benchmarking modern policies under visual and dynamics randomization, multi-task training, and action-head adaptation surfaces common limitations of current dexterous-manipulation methods and key challenges for future research.",
+  "authors": ["Hanwen Wang", "Weizhi Zhao", "Xiangyu Wang", "Siyuan Huang", "He Lin", "Boyuan Zheng", "Rongtao Xu", "Gang Wang", "Yao Mu", "He Wang", "Lue Fan", "Hongsheng Li", "Zhaoxiang Zhang", "Tieniu Tan"],
+  "date": "2026-05-15",
+  "tags": ["benchmark", "dexterous-manipulation", "dataset", "imitation-learning"],
+  "links": [
+    { "label": "Project Page", "url": "https://dexjoco.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.16257" },
+    { "label": "Code", "url": "https://github.com/brave-eai/dexjoco" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/DexJoCo/DexJoCo-Datasets-LeRobot" }
+  ]
+}

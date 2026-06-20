@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Search, Star, X } from 'lucide-react';
+import { Bookmark, Search, Star, X } from 'lucide-react';
 
 import { allTags, items } from '@/lib/items';
 import { createFuse, fuzzySearch } from '@/lib/search';
-import { useStars } from '@/lib/useStars';
-import { cn } from '@/lib/utils';
+import { useBookmarks } from '@/lib/useBookmarks';
+import { cn, formatTag } from '@/lib/utils';
 import { TagPicker } from './TagPicker';
 import { ItemList } from './ItemList';
 
@@ -15,27 +15,32 @@ function readParams() {
     q: p.get('q') ?? '',
     tags: p.getAll('tag').filter(Boolean),
     starred: p.get('starred') === '1',
+    bookmarked: p.get('bookmarked') === '1',
   };
 }
 
 export function Library() {
-  const { stars, toggle: toggleStar } = useStars();
+  const { bookmarks, toggle: toggleBookmark } = useBookmarks();
 
   const [query, setQuery] = React.useState(() => readParams().q);
   const [activeTags, setActiveTags] = React.useState<string[]>(() => readParams().tags);
   const [starredOnly, setStarredOnly] = React.useState(() => readParams().starred);
+  const [bookmarkedOnly, setBookmarkedOnly] = React.useState(() => readParams().bookmarked);
   const searchRef = React.useRef<HTMLInputElement>(null);
+
+  const starredCount = React.useMemo(() => items.filter((it) => it.starred).length, []);
 
   const fuse = React.useMemo(() => createFuse(items), []);
   const results = React.useMemo(() => {
     const base = query.trim() ? fuzzySearch(fuse, query) : items;
     return base.filter((it) => {
-      if (starredOnly && !stars.has(it.id)) return false;
+      if (starredOnly && !it.starred) return false;
+      if (bookmarkedOnly && !bookmarks.has(it.id)) return false;
       // OR semantics: keep an item if it carries any of the selected tags.
       if (activeTags.length && !activeTags.some((t) => it.tags.includes(t))) return false;
       return true;
     });
-  }, [query, activeTags, starredOnly, stars, fuse]);
+  }, [query, activeTags, starredOnly, bookmarkedOnly, bookmarks, fuse]);
 
   // ⌘K / Ctrl+K focuses the search field.
   React.useEffect(() => {
@@ -55,24 +60,26 @@ export function Library() {
     if (query) p.set('q', query);
     for (const t of activeTags) p.append('tag', t);
     if (starredOnly) p.set('starred', '1');
+    if (bookmarkedOnly) p.set('bookmarked', '1');
     const qs = p.toString();
     window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname);
-  }, [query, activeTags, starredOnly]);
+  }, [query, activeTags, starredOnly, bookmarkedOnly]);
 
   const toggleTag = (tag: string) =>
     setActiveTags((p) => (p.includes(tag) ? p.filter((t) => t !== tag) : [...p, tag]));
 
-  const hasFilters = Boolean(query.trim() || activeTags.length || starredOnly);
+  const hasFilters = Boolean(query.trim() || activeTags.length || starredOnly || bookmarkedOnly);
   const clearAll = () => {
     setQuery('');
     setActiveTags([]);
     setStarredOnly(false);
+    setBookmarkedOnly(false);
   };
 
-  const emptyHint = starredOnly
-    ? stars.size
+  const emptyHint = bookmarkedOnly
+    ? bookmarks.size
       ? 'No bookmarks match these filters.'
-      : 'No bookmarks yet — tap the star on any entry to save it.'
+      : 'No bookmarks yet — tap the bookmark on any entry to save it.'
     : 'Try a different search or clear the filters.';
 
   return (
@@ -121,7 +128,12 @@ export function Library() {
           <Pill active={starredOnly} onClick={() => setStarredOnly((s) => !s)}>
             <Star className={cn('size-4', starredOnly && 'fill-current')} />
             Starred
-            {stars.size > 0 && <span className="font-mono text-xs opacity-70">{stars.size}</span>}
+            {starredCount > 0 && <span className="font-mono text-xs opacity-70">{starredCount}</span>}
+          </Pill>
+          <Pill active={bookmarkedOnly} onClick={() => setBookmarkedOnly((s) => !s)}>
+            <Bookmark className={cn('size-4', bookmarkedOnly && 'fill-current')} />
+            Bookmarked
+            {bookmarks.size > 0 && <span className="font-mono text-xs opacity-70">{bookmarks.size}</span>}
           </Pill>
           <TagPicker
             tags={allTags}
@@ -132,7 +144,7 @@ export function Library() {
 
           {activeTags.map((t) => (
             <FilterChip key={t} mono onClear={() => toggleTag(t)}>
-              {t}
+              {formatTag(t)}
             </FilterChip>
           ))}
           {hasFilters && (
@@ -149,8 +161,8 @@ export function Library() {
         <ItemList
           items={results}
           query={query}
-          stars={stars}
-          onToggleStar={toggleStar}
+          bookmarks={bookmarks}
+          onToggleBookmark={toggleBookmark}
           activeTags={activeTags}
           onToggleTag={toggleTag}
           emptyHint={emptyHint}
@@ -199,7 +211,7 @@ function FilterChip({
       type="button"
       onClick={onClear}
       className={cn(
-        'inline-flex h-10 cursor-pointer items-center gap-1.5 border border-foreground/30 bg-foreground/10 px-2.5 text-[13px] text-foreground sm:h-8',
+        'inline-flex h-10 cursor-pointer items-center gap-1.5 border border-foreground bg-background px-2.5 text-[13px] text-foreground sm:h-8',
         mono && 'font-mono',
       )}
     >

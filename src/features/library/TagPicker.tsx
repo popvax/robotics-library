@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Popover } from 'radix-ui';
 import { Check, ChevronDown, Tag } from 'lucide-react';
 
-import { cn } from '@/lib/utils';
+import { cn, formatTag } from '@/lib/utils';
 
 export function TagPicker({
   tags,
@@ -17,7 +17,9 @@ export function TagPicker({
 }) {
   const [q, setQ] = React.useState('');
   const needle = q.trim().toLowerCase();
-  const filtered = needle ? tags.filter((t) => t.tag.includes(needle)) : tags;
+  const filtered = needle
+    ? tags.filter((t) => t.tag.includes(needle) || formatTag(t.tag).includes(needle))
+    : tags;
 
   return (
     <Popover.Root>
@@ -74,7 +76,7 @@ export function TagPicker({
                     >
                       {on && <Check className="size-3" />}
                     </span>
-                    <span className="flex-1 truncate font-mono text-sm">{tag}</span>
+                    <span className="flex-1 truncate font-mono text-[13px]">{formatTag(tag)}</span>
                     <span className="font-mono text-xs text-muted-foreground">{count}</span>
                   </button>
                 );

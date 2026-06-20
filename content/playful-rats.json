@@ -1,0 +1,12 @@
+{
+  "title": "RATs: Playful Agentic Robot Learning",
+  "summary": "RATs (Robotics Agent Teams) studies Playful Agentic Robot Learning, where an embodied coding agent uses self-directed play as a continual skill-learning stage before downstream tasks arrive. During play, RATs proposes novel yet learnable exploratory tasks, plans and executes robot-code policies, verifies intermediate progress, diagnoses failures and retries with dense step-level feedback, and distills successful executions into a persistent code skill library that the agent later reuses to solve new tasks. On LIBERO-PRO and MolmoSpaces, play-learned skills improve held-out downstream tasks over no-play and random-play baselines, with 20.6 and 17.0 percentage-point gains over CaP-Agent0; the learned skills also plug into other inference-time Code-as-Policy agents, improving RoboSuite and real-world transfer by 8.9 and 8.8 points without finetuning the underlying model.",
+  "authors": ["Junyi Zhang", "Jiaxin Ge", "Hanjun Yoo", "Letian Fu", "Zihan Yang", "Yaowei Liu", "Raj Saravanan", "Shaofeng Yin", "Justin Yu", "Dantong Niu", "Zirui Wang", "Roei Herzig", "Ken Goldberg", "Yutong Bai", "David M. Chan", "Ion Stoica", "Angjoo Kanazawa", "Jiahui Lei", "Haiwen Feng", "Trevor Darrell"],
+  "date": "2026-06-17",
+  "tags": ["planning", "manipulation", "test-time-compute"],
+  "links": [
+    { "label": "Project Page", "url": "https://playful-rats.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.19419" },
+    { "label": "Code", "url": "https://github.com/Playful-RATs/rats" }
+  ]
+}

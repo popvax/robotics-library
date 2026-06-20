@@ -1,0 +1,13 @@
+{
+  "title": "VERITAS: Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
+  "summary": "VERITAS is a generator-verifier framework for generalist robot policies that improves them at inference time and enables autonomous self-improvement. A pre-trained generalist policy acts as a 'generator', paired with a gradient-free 'visual verifier' that evaluates candidate actions at inference time — steering the policy to better performance without any additional training. The verified rollouts also serve as supervision for offline policy improvement: fine-tuning on verified self-generated trajectories yields consistent gains, reaching efficiency comparable to expert demonstrations while requiring no human interventions.",
+  "authors": ["Mingtong Zhang", "Dhruv Shah"],
+  "date": "2026-06-16",
+  "starred": true,
+  "tags": ["generalist-policy", "test-time-compute", "reward-design", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://veritas-improvement.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.18247" },
+    { "label": "Code", "url": "https://github.com/princeton-prism/veritas" }
+  ]
+}

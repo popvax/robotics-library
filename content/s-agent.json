@@ -1,0 +1,12 @@
+{
+  "title": "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
+  "summary": "S-Agent is a spatial tool-use agentic paradigm for understanding and reasoning over continuous multi-view images and videos, formulating spatial reasoning as spatio-temporal evidence accumulation rather than isolated frame-level prediction. A VLM acts as a semantic planner that decides what evidence is needed, while a hierarchy of spatial tools and experts grounds objects in 2D, lifts them into 3D geometric evidence, and aggregates it into high-level spatial knowledge such as counting, measurement, orientation, and relative position; a temporal memory — Scene Memory for the evolving scene state and Agent Memory for reasoning context — integrates evidence across frames and reasoning steps. S-Agent improves both open- and closed-source VLMs in a training-free manner, and supervised fine-tuning on its generated trajectories (S-300K) yields S-Agent-8B, a compact spatial agent that surpasses similar-scale baselines and performs comparably to advanced closed-source models.",
+  "authors": ["Yalun Dai", "Hao Li", "Shulin Tian", "Runmao Yao", "Yuhao Dong", "Fangzhou Hong", "Zhaoxi Chen", "Fangfu Liu", "Baoliang Tian", "Dingwen Zhang", "Tao Wang", "Kim-Hui Yap", "Ziwei Liu"],
+  "date": "2026-06-18",
+  "tags": ["perception", "planning", "test-time-compute"],
+  "links": [
+    { "label": "Project Page", "url": "https://ropedia.github.io/S-Agent/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.20515" },
+    { "label": "Code", "url": "https://github.com/Ropedia/S-Agent/" }
+  ]
+}

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const KEY = 'robotics-library.stars';
+const KEY = 'robotics-library.bookmarks';
 
 function read(): Set<string> {
   try {
@@ -11,22 +11,22 @@ function read(): Set<string> {
   }
 }
 
-/** Bookmarks persisted to the browser's localStorage. */
-export function useStars() {
-  const [stars, setStars] = React.useState<Set<string>>(() =>
+/** The reader's personal bookmarks, persisted to the browser's localStorage. */
+export function useBookmarks() {
+  const [bookmarks, setBookmarks] = React.useState<Set<string>>(() =>
     typeof localStorage === 'undefined' ? new Set<string>() : read(),
   );
 
   React.useEffect(() => {
     try {
-      localStorage.setItem(KEY, JSON.stringify([...stars]));
+      localStorage.setItem(KEY, JSON.stringify([...bookmarks]));
     } catch {
       /* private mode / quota — ignore */
     }
-  }, [stars]);
+  }, [bookmarks]);
 
   const toggle = React.useCallback((id: string) => {
-    setStars((prev) => {
+    setBookmarks((prev) => {
       const next = new Set(prev);
       if (next.has(id)) next.delete(id);
       else next.add(id);
@@ -34,5 +34,5 @@ export function useStars() {
     });
   }, []);
 
-  return { stars, toggle };
+  return { bookmarks, toggle };
 }

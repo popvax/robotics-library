@@ -1,0 +1,12 @@
+{
+  "title": "UMA: Unified Motion-Action Modeling for Heterogeneous Robot Learning",
+  "summary": "UMA (Unified Motion-Action Model) uses 3D object motion trajectories as a shared interface to bridge visuomotor control and dynamics modeling, treating object motion and robot actions as co-evolving variables under a masked generative objective — where the mask pattern sets both the pretraining supervision regime and the deployment inference mode. Using hindsight-relabeled motion contexts and a contrastive objective that disentangles task intent from scene geometry, it enables multi-task pretraining across heterogeneous data sources without manually annotated task instructions. Pretrained on a mixture of robot demonstrations, human videos, and simulated data, the same parameters support motion-conditioned visuomotor control, motion-based dynamics modeling, and few-shot task adaptation, outperforming state-of-the-art baselines specialized for each mode.",
+  "authors": ["Yunhao Cao", "Shitong Liu", "Chao Feng", "Meryl Zhang", "Xuanchen Lu", "Andrew Owens", "Kuan Fang"],
+  "date": "2026-06-15",
+  "starred": true,
+  "tags": ["world-model", "manipulation", "human-video", "generalist-policy"],
+  "links": [
+    { "label": "Project Page", "url": "https://uma-manipulation.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.16917" }
+  ]
+}

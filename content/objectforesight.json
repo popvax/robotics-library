@@ -1,0 +1,14 @@
+{
+  "title": "ObjectForesight: Predicting Future 3D Object Trajectories from Human Videos",
+  "summary": "ObjectForesight is a 3D object-centric dynamics model that predicts future 6-DoF poses and trajectories of rigid objects from short egocentric video sequences. Unlike conventional world or dynamics models that operate in pixel or latent space, it represents the world explicitly in 3D at the object level, enabling geometrically grounded and temporally coherent predictions that capture object affordances and trajectories. To train at scale, the authors curate a dataset of 2M+ short clips with pseudo-ground-truth 3D object trajectories (via segmentation, mesh reconstruction, and 3D pose estimation), and show significant gains in accuracy, geometric consistency, and generalization to unseen objects and scenes.",
+  "authors": ["Rustin Soraki", "Homanga Bharadhwaj", "Ali Farhadi", "Roozbeh Mottaghi"],
+  "date": "2026-01-08",
+  "tags": ["world-model", "human-video", "egocentric", "dataset"],
+  "links": [
+    { "label": "Project Page", "url": "https://objectforesight.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2601.05237" },
+    { "label": "Code", "url": "https://github.com/RustinS/ObjectForesight" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/raivn/ObjectForesight-EPIC" },
+    { "label": "Models", "url": "https://huggingface.co/raivn/ObjectForesight-EPIC-DiT" }
+  ]
+}

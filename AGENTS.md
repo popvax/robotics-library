@@ -69,6 +69,7 @@ append the new link(s) to that file's `links` — don't duplicate.
 | `tags`     | ☐ | kebab-case strings (see below). |
 | `authors`  | ☐ | `["First Last", …]` — the **full** list, in source order. |
 | `date`     | ☐ | `"YYYY"`, `"YYYY-MM"`, or `"YYYY-MM-DD"` (drives sort order). |
+| `starred`  | ☐ | `true` to flag an editorial highlight — renders a purple star before the title. |
 
 \* Technically optional, but every entry should have at least one link.
 

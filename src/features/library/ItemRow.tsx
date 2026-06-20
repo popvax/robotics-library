@@ -1,24 +1,24 @@
 import * as React from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { Check, Copy, Star } from 'lucide-react';
+import { Bookmark, Check, Copy, Star } from 'lucide-react';
 
 import type { Item } from '@/lib/schema';
 import { iconForLink } from '@/lib/itemMeta';
 import { copyText } from '@/lib/clipboard';
-import { cn } from '@/lib/utils';
+import { cn, formatTag } from '@/lib/utils';
 
 export function ItemRow({
   item,
   query,
-  starred,
-  onToggleStar,
+  bookmarked,
+  onToggleBookmark,
   activeTags,
   onToggleTag,
 }: {
   item: Item;
   query: string;
-  starred: boolean;
-  onToggleStar: (id: string) => void;
+  bookmarked: boolean;
+  onToggleBookmark: (id: string) => void;
   activeTags: string[];
   onToggleTag: (t: string) => void;
 }) {
@@ -53,10 +53,16 @@ export function ItemRow({
       }}
       className="group cursor-pointer border-b border-border/60 py-4"
     >
-      {/* title + authors, with copy in the corner */}
+      {/* title + authors, with the row actions (bookmark, copy) in the corner */}
       <div className="flex items-start gap-3">
         <div className="min-w-0 flex-1">
           <h2 className="text-[17px] font-medium leading-snug tracking-tight text-foreground transition-colors group-hover:text-muted-foreground">
+            {item.starred && (
+              <Star
+                aria-label="Starred"
+                className="mr-1 inline-block size-3.5 align-[-0.01em] fill-popvax text-popvax"
+              />
+            )}
             <Highlight text={item.title} query={query} />
           </h2>
           {item.authors.length > 0 && (
@@ -66,57 +72,58 @@ export function ItemRow({
           )}
         </div>
 
-        <button
-          type="button"
-          onClick={copy}
-          aria-label="Copy to share"
-          title="Copy to share"
-          className="-mr-1.5 shrink-0 cursor-pointer p-1.5 text-muted-foreground/60 transition-colors hover:bg-muted hover:text-foreground"
-        >
-          {copied ? <Check className="size-4 text-popvax" /> : <Copy className="size-4" />}
-        </button>
+        <div className="-mr-1.5 flex shrink-0 items-center">
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleBookmark(item.id);
+            }}
+            aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark'}
+            aria-pressed={bookmarked}
+            title={bookmarked ? 'Remove bookmark' : 'Bookmark'}
+            className="cursor-pointer p-1.5 text-muted-foreground/60 transition-colors hover:bg-muted hover:text-foreground"
+          >
+            <Bookmark className={cn('size-4', bookmarked && 'fill-popvax text-popvax')} />
+          </button>
+          <button
+            type="button"
+            onClick={copy}
+            aria-label="Copy to share"
+            title="Copy to share"
+            className="cursor-pointer p-1.5 text-muted-foreground/60 transition-colors hover:bg-muted hover:text-foreground"
+          >
+            {copied ? <Check className="size-4 text-popvax" /> : <Copy className="size-4" />}
+          </button>
+        </div>
       </div>
 
-      {/* star + tags */}
-      <div className="mt-3 flex flex-wrap items-center gap-1.5">
-        <button
-          type="button"
-          onClick={(e) => {
-            e.stopPropagation();
-            onToggleStar(item.id);
-          }}
-          aria-label={starred ? 'Remove bookmark' : 'Bookmark'}
-          aria-pressed={starred}
-          className="-ml-1 mr-0.5 shrink-0 cursor-pointer p-1 text-muted-foreground/70 transition-colors hover:text-foreground"
-        >
-          <Star
-            strokeWidth={starred ? 1.5 : 2}
-            className={cn('size-5', starred && 'fill-popvax/40 text-popvax')}
-          />
-        </button>
-
-        {item.tags.map((t) => {
-          const on = activeTags.includes(t);
-          return (
-            <button
-              key={t}
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                onToggleTag(t);
-              }}
-              className={cn(
-                'cursor-pointer border px-1.5 py-0.5 font-mono text-[11px] transition-colors',
-                on
-                  ? 'border-foreground/30 bg-foreground/10 text-foreground'
-                  : 'border-border bg-background text-foreground/80 hover:border-foreground/50 hover:text-foreground',
-              )}
-            >
-              {t}
-            </button>
-          );
-        })}
-      </div>
+      {/* tags */}
+      {item.tags.length > 0 && (
+        <div className="mt-3 flex flex-wrap items-center gap-1.5">
+          {item.tags.map((t) => {
+            const on = activeTags.includes(t);
+            return (
+              <button
+                key={t}
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onToggleTag(t);
+                }}
+                className={cn(
+                  'cursor-pointer border px-1.5 pb-1 pt-[5px] font-mono text-[11px] leading-none transition-colors',
+                  on
+                    ? 'border-foreground/30 bg-foreground/10 text-foreground'
+                    : 'border-border bg-background text-foreground/80 hover:border-foreground/50 hover:text-foreground',
+                )}
+              >
+                {formatTag(t)}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {/* expanded: description + links */}
       <AnimatePresence initial={false}>

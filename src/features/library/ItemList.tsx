@@ -4,16 +4,16 @@ import { ItemRow } from './ItemRow';
 export function ItemList({
   items,
   query,
-  stars,
-  onToggleStar,
+  bookmarks,
+  onToggleBookmark,
   activeTags,
   onToggleTag,
   emptyHint,
 }: {
   items: Item[];
   query: string;
-  stars: Set<string>;
-  onToggleStar: (id: string) => void;
+  bookmarks: Set<string>;
+  onToggleBookmark: (id: string) => void;
   activeTags: string[];
   onToggleTag: (t: string) => void;
   emptyHint: string;
@@ -30,8 +30,8 @@ export function ItemList({
           key={it.id}
           item={it}
           query={query}
-          starred={stars.has(it.id)}
-          onToggleStar={onToggleStar}
+          bookmarked={bookmarks.has(it.id)}
+          onToggleBookmark={onToggleBookmark}
           activeTags={activeTags}
           onToggleTag={onToggleTag}
         />
