@@ -1,8 +1,9 @@
 {
   "title": "Ambient Diffusion Policy: Imitation Learning from Suboptimal Data in Robotics",
-  "summary": "Ambient Diffusion Policy leverages suboptimal demonstrations alongside high-quality data in robot imitation learning via noise-dependent data usage. It restricts when suboptimal samples contribute to training — using them at low-noise locality windows and high-noise contraction windows where their features align with the target task. The approach exploits the observation that diffusion policies learn task-level structure at high noise levels and refine motion primitives at low noise levels, enabling selective use of mixed-quality datasets via a simple change to the Diffusion Policy dataloader.",
+  "summary": "Ambient Diffusion Policy is a simple and principled method for imitation learning from suboptimal data in robotics. Whereas existing methods that co-train on high-quality and suboptimal demonstrations often fail to separate the meaningful and harmful features in the suboptimal samples, it extracts only the useful features by introducing a new axis to co-training: noise-dependent data usage — restricting the contribution of suboptimal data during training to only the high and low diffusion times. This exploits two properties induced by the spectral power law of robot action data — a global-to-local hierarchy and locality. Across four types of suboptimal data (noisy trajectories, sim-to-real gap, task mismatch, and large-scale data mixtures) over six tasks it effectively learns from arbitrary sources, notably outperforming existing co-training baselines by up to 33% when scaled to Open X-Embodiment.",
   "authors": ["Adam Wei", "Nicholas Pfaff", "Thomas Cohn", "Arif Kerem Dayı", "Constantinos Daskalakis", "Giannis Daras", "Russ Tedrake"],
   "date": "2026",
+  "starred": true,
   "tags": ["diffusion", "imitation-learning", "manipulation", "generalist-policy"],
   "links": [
     { "label": "Project Page", "url": "https://ambient-diffusion-policy.github.io/" },

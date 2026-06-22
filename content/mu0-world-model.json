@@ -3,6 +3,7 @@
   "summary": "μ₀ is a scalable world model that predicts 3D interaction traces of semantic points — objects, tools, hands, and contact regions — rather than raw pixels or low-level actions, enabling transfer across robot embodiments from video-only pretraining. The model is trained on large collections of human and robot video and generalizes to new manipulators without task-specific action supervision. On the RoboCasa365 benchmark it achieves 30.25% average success, outperforming prior baselines, and demonstrates effectiveness on real UR3 robot manipulation tasks.",
   "authors": ["Seungjae Lee", "Yoonkyo Jung", "Jusuk Lee", "Jonghun Shin", "Amir Hossein Shahidzadeh", "Yao-Chih Lee", "H. Jin Kim", "Jia-Bin Huang", "Furong Huang"],
   "date": "2026",
+  "starred": true,
   "tags": ["world-model", "manipulation", "human-video"],
   "links": [
     { "label": "Project Page", "url": "https://mu0-wm.github.io/" },

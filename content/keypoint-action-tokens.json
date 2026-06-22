@@ -1,0 +1,13 @@
+{
+  "title": "KAT: Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics",
+  "summary": "Keypoint Action Tokens (KAT) shows that off-the-shelf text-based Transformers, with no additional training, can perform few-shot in-context visual imitation learning — mapping visual observations to action sequences that emulate the demonstrator's behaviour. It transforms visual observations (inputs) and trajectories of actions (outputs) into sequences of tokens that a text-pretrained Transformer can ingest and generate. Despite being trained on language, these models excel at translating tokenised visual keypoint observations into action trajectories, performing on par or better than state-of-the-art techniques in the low-data regime, indicating promising new avenues for repurposing natural language models for embodied tasks.",
+  "authors": ["Norman Di Palo", "Edward Johns"],
+  "date": "2024-03-28",
+  "starred": true,
+  "tags": ["imitation-learning", "manipulation", "representation"],
+  "links": [
+    { "label": "Project Page", "url": "https://www.robot-learning.uk/keypoint-action-tokens" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2403.19578" },
+    { "label": "Code", "url": "https://colab.research.google.com/drive/1ZxZDahvLBE2EGo8_98Lk0Zr8IvUIDjMc?usp=sharing" }
+  ]
+}

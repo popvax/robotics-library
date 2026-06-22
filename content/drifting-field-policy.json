@@ -1,0 +1,13 @@
+{
+  "title": "DFP: Drifting Field Policy: A One-Step Generative Policy via Wasserstein Gradient Flow",
+  "summary": "Drifting Field Policy (DFP) is a non-ODE one-step generative policy built on the drifting model paradigm. It frames the policy update as a reverse-KL Wasserstein-2 gradient flow toward a soft target policy, so that each update is a gradient step in probability space — decomposed into an ascent toward higher action-value regions and a score matching with the anchor policy as a trust region. The authors derive a simple, tractable surrogate of the otherwise intractable update loss, akin to behavior cloning on top-K critic-selected actions. With one-step inference, DFP achieves state-of-the-art performance on several manipulation tasks across Robomimic and OGBench, outperforming ODE-based policies.",
+  "authors": ["Juil Koo", "Mingue Park", "Jiwon Choi", "Yunhong Min", "Minhyuk Sung"],
+  "date": "2026-05-08",
+  "starred": true,
+  "tags": ["reinforcement-learning", "manipulation", "imitation-learning"],
+  "links": [
+    { "label": "Project Page", "url": "https://driftingpolicy.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.07727" },
+    { "label": "Code", "url": "https://github.com/KAIST-Visual-AI-Group/DFP" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "DAM-VLA: A Dynamic Action Model-Based Vision-Language-Action Framework for Robot Manipulation",
+  "summary": "DAM-VLA is a dynamic action model-based vision-language-action framework that integrates VLM reasoning with diffusion-based action models specialized for arm and gripper control, addressing how VLA frameworks struggle to reconcile general task adaptability with the precision required for intricate manipulation. It introduces an action routing mechanism that uses task-specific visual and linguistic cues to select appropriate action models (e.g., arm movement or gripper manipulation), a dynamic action model that fuses high-level VLM cognition with low-level visual features to predict actions, and a dual-scale action weighting mechanism for dynamic coordination between the arm-movement and gripper-manipulation models. Across evaluations, DAM-VLA achieves superior success rates compared to state-of-the-art VLA methods in simulation (SIMPLER, FurnitureBench) and real-world settings, showing robust generalization from standard pick-and-place to long-horizon and contact-rich tasks.",
+  "authors": ["Xiongfeng Peng", "Jiaqian Yu", "Dingzhe Li", "Yixiang Jin", "Lu Xu", "Yamin Mao", "Chao Zhang", "Weiming Li", "Sujin Jang", "Dongwook Lee", "Daehyun Ji"],
+  "date": "2026-03-01",
+  "tags": ["vla", "manipulation", "diffusion"],
+  "links": [
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2603.00926" },
+    { "label": "Blog", "url": "https://research.samsung.com/blog/DAM-VLA-A-Dynamic-Action-Model-Based-Vision-Language-Action-Framework-for-Robot-Manipulation" }
+  ]
+}

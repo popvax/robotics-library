@@ -1,0 +1,11 @@
+{
+  "title": "I-FailSense: Towards General Robotic Failure Detection with Vision-Language Models",
+  "summary": "I-FailSense is an open-source vision-language-model framework with grounded arbitration designed for robotic failure detection — in particular semantic misalignment errors, where a robot executes a task that is semantically meaningful but inconsistent with the given instruction. The authors propose a method for building datasets targeting semantic misalignment failure detection from existing language-conditioned manipulation datasets, and post-train a base VLM augmented with lightweight classification heads ('FS blocks') attached to different internal layers, whose predictions are aggregated by an ensembling mechanism. I-FailSense outperforms state-of-the-art VLMs of comparable and larger size at detecting semantic misalignment errors, and despite being trained only on that task, it generalizes to broader robotic failure categories and transfers to other simulation environments and the real world with zero-shot or minimal post-training.",
+  "authors": ["Clémence Grislain", "Hamed Rahimi", "Olivier Sigaud", "Mohamed Chetouani"],
+  "date": "2025-09-19",
+  "tags": ["perception", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://clemgris.github.io/I-FailSense/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2509.16072" }
+  ]
+}

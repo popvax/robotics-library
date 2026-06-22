@@ -1,0 +1,11 @@
+{
+  "title": "VLM3: Vision Language Models Are Native 3D Learners",
+  "summary": "VLM3 argues that Vision Language Models are native 3D learners: a large-scale study shows that focal length unification, text-based pixel reference, and data mixture and scaling are all that is needed for effective 3D learning — model architecture changes, large models, heavy augmentations, and complex losses are not necessary conditions. The proposed method is a scalable approach with the simplest design that enables standard VLMs to master diverse 3D tasks. VLM3 advances VLM depth estimation accuracy by a large margin (0.84 → 0.9) and enables tasks such as pixel correspondence, camera pose estimation, and object-level 3D understanding, matching expert vision model accuracy while maintaining standard architectures and text-based training.",
+  "authors": ["Zhipeng Cai", "Zhuang Liu", "Yunyang Xiong", "Zechun Liu", "Vikas Chandra", "Yangyang Shi"],
+  "date": "2026-05-28",
+  "tags": ["perception", "representation"],
+  "links": [
+    { "label": "Code", "url": "https://github.com/facebookresearch/VLM3" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.30561" }
+  ]
+}

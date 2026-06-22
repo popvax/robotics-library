@@ -1,0 +1,14 @@
+{
+  "title": "MimicDroid: In-Context Learning for Humanoid Robot Manipulation from Human Play Videos",
+  "summary": "MimicDroid enables humanoid robots to solve new manipulation tasks from a few video examples via in-context learning (ICL), trained entirely from human play videos — continuous, unlabeled footage of people interacting freely with their environment — as a scalable alternative to labor-intensive teleoperation data. It extracts trajectory pairs with similar manipulation behaviors and trains the policy to predict the actions of one trajectory conditioned on the other, acquiring ICL capabilities for adapting to novel objects and environments at test time. To bridge the embodiment gap, it retargets human wrist poses estimated from RGB videos to the humanoid and applies random patch masking during training to reduce overfitting to human-specific cues. MimicDroid outperformed state-of-the-art methods and achieved nearly twofold higher success rates in the real world.",
+  "authors": ["Rutav Shah", "Shuijing Liu", "Qi Wang", "Zhenyu Jiang", "Sateesh Kumar", "Mingyo Seo", "Roberto Martín-Martín", "Yuke Zhu"],
+  "date": "2025-09-11",
+  "starred": true,
+  "tags": ["humanoid", "manipulation", "human-video", "imitation-learning"],
+  "links": [
+    { "label": "Project Page", "url": "https://ut-austin-rpl.github.io/MimicDroid/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2509.09769" },
+    { "label": "Code", "url": "https://github.com/UT-Austin-RPL/mimicdroid-robocasa/tree/latest" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/Rutav/MimicDroidDataset/tree/main" }
+  ]
+}
