@@ -1,0 +1,11 @@
+{
+  "title": "ssik: Analytical inverse kinematics for 6R and 7R revolute arms",
+  "summary": "ssik is a Python library that produces every analytical inverse-kinematics branch for 6R and 7R revolute manipulators. It ships thirteen prebuilt arms (UR5, Puma 560, JACO 2, KUKA iiwa14, Kinova Gen3, Franka Panda, Flexiv Rizon 4/10, Kassow KR810, UFactory xArm6/7, Unitree Z1, AgileX PiPER) plus a `ssik build` CLI that emits a self-contained per-arm artifact from a URDF. It covers kinematic classes that standard subproblem-decomposition libraries do not — non-Pieper 6R (JACO 2's 55° twists), non-SRS 7R (Rizon 4, Kassow KR810), and approximate-SRS 7R (Kinova Gen3) — via a tier-based dispatcher backed by IK-Geo subproblems and a Husty-Pfurner Study-quaternion universal fallback. Each returned solution carries its joint vector and FK residual, with forward-kinematics closure well below typical robot repeatability and tightenable to machine precision.",
+  "authors": ["Siddhartha Srinivasa"],
+  "date": "2026",
+  "tags": ["manipulation", "planning"],
+  "links": [
+    { "label": "Code", "url": "https://github.com/personalrobotics/ssik" },
+    { "label": "Project Page", "url": "https://personalrobotics.github.io/ssik/" }
+  ]
+}

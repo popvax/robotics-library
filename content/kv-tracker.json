@@ -1,0 +1,13 @@
+{
+  "title": "KV-Tracker: Real-Time Pose Tracking with Transformers",
+  "summary": "Multi-view 3D geometry networks offer a powerful prior but are prohibitively slow for real-time use. KV-Tracker adapts them for online operation, enabling real-time 6-DoF pose tracking and online reconstruction of objects and scenes from monocular RGB video: it rapidly selects and manages keyframes to map a scene or object via π³ with full bidirectional attention, then caches the global self-attention block's key-value (KV) pairs and uses them as the sole scene representation for online tracking. This yields up to 15× inference speedup without drift or catastrophic forgetting, and the caching strategy is model-agnostic, applying to other off-the-shelf multi-view networks without retraining. On TUM RGB-D, 7-Scenes, Arctic and OnePose, KV-Tracker performs strongly on both scene-level tracking and the more challenging depth-free, prior-free on-the-fly object tracking and reconstruction, while maintaining frame-rates up to ~27 FPS.",
+  "authors": ["Marwan Taher", "Ignacio Alzugaray", "Kirill Mazur", "Xin Kong", "Andrew J. Davison"],
+  "date": "2025-12-27",
+  "tags": ["perception"],
+  "links": [
+    { "label": "Project Page", "url": "https://marwan99.github.io/kv_tracker/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2512.22581" },
+    { "label": "Video", "url": "https://youtu.be/ZVNnvZZxhoI" },
+    { "label": "Code", "url": "https://github.com/Marwan99/kv_tracker" }
+  ]
+}

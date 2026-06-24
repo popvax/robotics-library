@@ -1,0 +1,13 @@
+{
+  "title": "VERA: Turning Video Models into Generalist Robot Policies",
+  "summary": "Video generative models can depict the completion of complex tasks across embodiments and environments, and recent robot foundation models finetune them on action-labeled data to jointly predict future observations and actions. VERA (Video-to-Embodied Robot Action Model) instead leaves the video planner as-is and trains only an embodiment-specific inverse dynamics model (IDM) based on the robot embodiment Jacobian — keeping the planner embodiment-agnostic and interchangeable, and letting the IDM train on readily available self-play data. The resulting closed-loop, video-to-action policy is data-efficient and scales to high-dimensional action spaces, achieving strong results across simulation and the real world, including zero-shot Panda arm manipulation and 16-DoF Allegro-hand dexterous cube re-orientation. The same video planner transfers across embodiments by pairing it with different IDMs, positioning decoupled video planning plus faithful video-to-action translation as a route to zero-shot, cross-embodiment robot control.",
+  "authors": ["Sizhe Lester Li", "Evan Kim", "Xingjian Bai", "Tong Zhao", "Tao Pang", "Max Simchowitz", "Vincent Sitzmann"],
+  "date": "2026-05-27",
+  "starred": true,
+  "tags": ["world-model", "video-prediction", "generalist-policy", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://vera.csail.mit.edu/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.27817" },
+    { "label": "Code", "url": "https://github.com/sizhe-li/VERA" }
+  ]
+}

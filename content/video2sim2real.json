@@ -1,0 +1,11 @@
+{
+  "title": "Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video",
+  "summary": "Human manipulation videos are a convenient source for robot learning, but directly transferring human dexterity to robots remains challenging due to perception errors and the embodiment gap. Video2Sim2Real is a full-stack framework for autonomous skill acquisition from a single human manipulation video: it uses off-the-shelf foundation models to reconstruct a simulator-ready digital twin and extract robot and object motion priors, then identifies object-centric keyframes to optimize robot configurations that serve as anchors refining the motion toward its desired effect on the environment. To bridge the sim-to-real gap, it learns to recalibrate robot configurations from noisy real-world point clouds via imitation learning and uses residual reinforcement learning for local finger-level adaptations, with a collision-aware motion planning module enabling spatial generalization to novel object configurations. Across everyday manipulation tasks, Video2Sim2Real improves simulated task success, safety, and trajectory coherence over baselines and achieves better sim-to-real transfer than existing techniques.",
+  "date": "2026",
+  "starred": true,
+  "tags": ["sim-to-real", "dexterous-manipulation", "human-video", "reinforcement-learning"],
+  "links": [
+    { "label": "Project Page", "url": "https://video2sim2real.github.io/" },
+    { "label": "Code", "url": "https://github.com/video2sim2real/video2sim2real" }
+  ]
+}

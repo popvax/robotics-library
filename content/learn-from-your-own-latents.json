@@ -1,0 +1,11 @@
+{
+  "title": "Learn from your own latents and not from tokens: A sample-complexity theory",
+  "summary": "Generative models from diffusion models to large language models perform remarkably but need orders of magnitude more training data than biological learners; an alternative paradigm trains networks to predict their own latent representations of related views or masked regions (as in data2vec and JEPA), echoing predictive-coding accounts of the cortex. Using a tractable probabilistic context-free grammar that captures the compositional structure of language and images — generating visible tokens by recursively applying production rules along a hidden tree of depth L — this paper quantifies the benefit: supervised or token-level SSL require a number of samples exponential in L to recover the latent tree, whereas latent prediction achieves it with a number of samples constant in L, up to logarithmic factors. The bound is confirmed with a hierarchical clustering algorithm, an end-to-end network whose predictor-clusterer modules predict their own latents at each level via gradient descent, and the first sample-complexity analysis of data2vec, which is shown to implicitly perform hierarchical latent prediction. This suggests that explicit stacking such as H-JEPA is largely redundant.",
+  "authors": ["Daniel J. Korchinski", "Alessandro Favero", "Matthieu Wyart"],
+  "date": "2026-05-26",
+  "starred": true,
+  "tags": ["representation"],
+  "links": [
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.27734" }
+  ]
+}

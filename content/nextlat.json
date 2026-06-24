@@ -1,0 +1,12 @@
+{
+  "title": "NextLat: Next-Latent Prediction Transformers Learn Compact World Models",
+  "summary": "Transformers replace recurrence with a memory that grows with sequence length and self-attention that enables ad-hoc lookups over past tokens, so they lack an inherent incentive to compress history into compact latent states with consistent transition rules — often generalizing poorly. NextLat (Next-Latent Prediction) extends standard next-token training with a self-supervised objective that trains a transformer to learn latent representations predictive of its next latent state given the next token; theoretically, these latents provably converge toward belief states — compressed information about the history needed to predict the future. This injects a recurrent inductive bias while leaving the architecture, parallel training efficiency, and inference unchanged, encouraging transformers to form compact internal world models with coherent belief states and transition dynamics. Across world modeling, reasoning, planning, and language modeling, NextLat improves downstream accuracy, representation compression, and lookahead planning over next-token prediction, and enables variable-length self-speculative decoding that accelerates inference by up to 3.3x.",
+  "authors": ["Jayden Teoh", "Manan Tomar", "Kwangjun Ahn", "Edward S. Hu", "Tim Pearce", "Pratyusha Sharma", "Akshay Krishnamurthy", "Riashat Islam", "Alex Lamb", "John Langford"],
+  "date": "2025-11-08",
+  "starred": true,
+  "tags": ["world-model", "representation", "planning"],
+  "links": [
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2511.05963" },
+    { "label": "Code", "url": "https://github.com/JaydenTeoh/NextLat" }
+  ]
+}

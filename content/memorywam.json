@@ -1,0 +1,12 @@
+{
+  "title": "MemoryWAM: Efficient World Action Modeling with Persistent Memory",
+  "summary": "World action models (WAMs) jointly model visual foresight and actions conditioned on both current and historical observations, but existing WAMs face a trade-off: efficient methods condition only on a bounded window of recent observations and struggle in non-Markovian environments, while methods that preserve long histories incur time and space costs that grow substantially with sequence length. MemoryWAM is a world action model with efficient persistent memory, using a hybrid memory design that combines recent frames, event-boundary anchor frames, and compact gist tokens that summarize long-range history. A tailored attention mechanism retrieves both detailed short-term and compressed long-term context, supporting memory-dependent decision-making with reduced inference latency and GPU memory usage. Across long-horizon, memory-dependent manipulation tasks in both simulation and the real world, MemoryWAM outperforms strong vision-language-action (VLA) and WAM baselines while maintaining favorable computational efficiency.",
+  "authors": ["Sizhe Yang", "Juncheng Mu", "Tianming Wei", "Chenhao Lu", "Xiaofan Li", "Linning Xu", "Zhengrong Xue", "Zhecheng Yuan", "Dahua Lin", "Jiangmiao Pang", "Huazhe Xu"],
+  "date": "2026-06-18",
+  "tags": ["world-model", "vla", "manipulation", "video-prediction"],
+  "links": [
+    { "label": "Project Page", "url": "https://yangsizhe.github.io/MemoryWAM/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.20562" },
+    { "label": "Code", "url": "https://github.com/yangsizhe/MemoryWAM" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "SARM2: Multi-Task Stage Aware Reward Modeling for Self Improving Robotic Manipulation",
+  "summary": "Fine-tuning vision-language-action (VLA) policies for long-horizon manipulation still relies heavily on behavior cloning, which requires costly high-quality demonstrations and keeps policies near the demonstration distribution. SARM2 is a multi-task stage-aware reward model that combines an action-primitive-based stage estimator with a multi-gate Mixture-of-Experts (MMoE) value head to produce dense per-step rewards across manipulation tasks, closing the gap between accurate-but-task-specific stage-aware models and broadly-applicable-but-coarse VLM reward models. Building on it, SPIRAL (Self-Policy Improvement via Reward-Aligned Learning) is an on-policy, reward-guided framework that improves VLA policies from cheap autonomous rollouts. On a 10-task benchmark the reward model cuts value-estimation MSE by 80% over the strongest baselines, and in SPIRAL it lifts task success from around 50% to near-perfect on Folding Shorts (58% to 100%) and Cleaning Whiteboard (50% to 90%).",
+  "authors": ["Qianzhong Chen", "Hau Zheng", "Justin Yu", "Suning Huang", "Jiankai Sun", "Ken Goldberg", "Chuan Wen", "Pieter Abbeel", "Yide Shentu", "Philipp Wu", "Mac Schwager"],
+  "date": "2026-06-09",
+  "tags": ["reward-design", "reinforcement-learning", "vla", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://qianzhong-chen.github.io/sarm2.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.10305" },
+    { "label": "Code (SARM2)", "url": "https://github.com/xdofai/opensarm" },
+    { "label": "Code (SPIRAL)", "url": "https://github.com/Qianzhong-Chen/openspiral" },
+    { "label": "Blog", "url": "https://www.xdof.ai/blog/sarm2" }
+  ]
+}

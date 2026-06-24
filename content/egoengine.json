@@ -1,0 +1,11 @@
+{
+  "title": "EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations",
+  "summary": "Dexterous manipulation is limited by the cost of collecting large-scale robot demonstrations, while egocentric human videos offer a scalable source of diverse behaviors but require bridging the visual gap between human and robot observations and the action gap between human motion and robot-executable action. EgoEngine is a scalable framework that, given an egocentric RGB video, produces (i) a high-fidelity robot observation video that replaces the human with a robot while preserving scene context and temporal alignment, and (ii) a task-aligned, executable robot action trajectory under feasibility constraints. Experiments in simulation and on real robots show EgoEngine enables scalable conversion of human videos into robot data and, to the authors' knowledge, demonstrates the first zero-shot visuomotor dexterous policy learning from egocentric human videos without real-robot demonstrations.",
+  "authors": ["Shuo Cheng", "Yangcen Liu", "Yiran Yang", "Xinchen Yin", "Woo Chul Shin", "Mengying Lin", "Danfei Xu"],
+  "date": "2026",
+  "starred": true,
+  "tags": ["egocentric", "human-video", "dexterous-manipulation", "video-prediction"],
+  "links": [
+    { "label": "Project Page", "url": "https://egoengine.github.io/" }
+  ]
+}
