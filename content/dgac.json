@@ -1,0 +1,13 @@
+{
+  "title": "DGAC: Robot Self-Improvement via Human-Video Dynamics Models",
+  "summary": "A central question in robot learning is how to acquire skills from the kinds of data humans learn from: passive observation, embodied practice, and the experience of failure. This work shows that human videos can be used to learn embodiment-agnostic action, dynamics, and value representations that transfer across robot embodiments, providing the predictive foundation for robots to autonomously improve from their own rollouts and failures. It introduces Dynamics-Guided Action Correction (DGAC), a training-free approach that uses these adapted models to repair failed states — each failure becomes a query for which the learned models propose and rank corrective actions, turning failures into supervision for the next policy update. Across seven real-world manipulation tasks spanning both a mobile manipulator and a static manipulator arm, DGAC improves success rates from 40% to 81% across multiple policy backbones, demonstrating cross-embodiment robot self-improvement from human-video priors.",
+  "authors": ["Hanzhi Chen", "Anran Zhang", "Simon Schaefer", "Kejia Chen", "Shi Chen", "Daniel Cremers", "Oier Mees", "Stefan Leutenegger"],
+  "date": "2026-06-19",
+  "starred": true,
+  "tags": ["human-video", "world-model", "reinforcement-learning", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://ethz-mrl.github.io/robot-self-improvement-website/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.21406" },
+    { "label": "Video", "url": "https://youtu.be/ZW3ZHjrllJA" }
+  ]
+}

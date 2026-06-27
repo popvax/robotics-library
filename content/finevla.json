@@ -1,0 +1,15 @@
+{
+  "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
+  "summary": "Vision-Language-Action (VLA) models are increasingly expected not only to complete tasks but to follow human instructions about how those tasks should be executed, yet existing robot datasets usually pair trajectories with coarse goal-level language, leaving execution-critical details such as active arm, approach direction, and contact region unspecified. FineVLA is an open framework for action-aligned fine-grained VLA supervision, comprising a data construction tool that unifies 972,247 trajectories across 85K tasks from 10 open-source datasets (building FineVLA-Data, a human-verified set of 47,159 fine-grained trajectories), a held-out benchmark (500 videos, 11,631 atomic facts, 1,030 VQA questions), a robotics-specialized VLM annotator, and a steerable VLA policy trained on controlled mixtures of fine-grained and raw goal-level instructions. Experiments show fine-grained supervision does not sacrifice goal-level success (FG-only improves over Raw-only by +1.4 to +8.1 points) and is complementary to raw instructions, peaking at a 1:2 to 1:1 mix — the best setting reaching 86.8%/82.5% in RoboTwin simulation and 62.7/100 in real-world dual-arm manipulation (vs. 49.9 Raw-only). It also improves steerable control, with the largest real-world gains on pose (+23), color (+18), and approach direction (+18) — factors where goal-level instructions provide no guidance.",
+  "authors": ["Xintong Hu", "Xuhong Huang", "Jinyu Zhang", "Yutong Yao", "Yuchong Sun", "Qiuyue Wang", "Mingsheng Li", "Sicheng Xie", "Yitao Liu", "Junhao Chen", "Yixuan Chen", "Yingming Zheng", "Shuai Bai", "Tao Yu"],
+  "date": "2026-05-26",
+  "starred": true,
+  "tags": ["vla", "manipulation", "dataset", "benchmark"],
+  "links": [
+    { "label": "Project Page", "url": "https://finevla.xlang.ai/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2605.27284" },
+    { "label": "Code", "url": "https://github.com/xlang-ai/FineVLA" },
+    { "label": "Dataset", "url": "https://huggingface.co/datasets/xlangai/RoboFine-bench" },
+    { "label": "Models", "url": "https://huggingface.co/xlangai/RoboFine-VLM-397B-A17B" }
+  ]
+}

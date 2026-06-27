@@ -1,0 +1,14 @@
+{
+  "title": "IMPACT: Learning Internal-Model Predictive Control for Forceful Robotic Manipulation",
+  "summary": "Real-world robotic manipulation often involves forceful interactions with the environment — using tools of varying weights, transporting objects of different masses, and contact-rich tasks like table wiping. Prior learning-based approaches use imitation learning policies that output target end-effector poses tracked by low-level impedance controllers, realizing forceful interactions either implicitly through steady-state tracking errors (which generalize poorly across object weights) or explicitly via wrist force/torque or tactile sensors (which require specialized hardware and add complexity). IMPACT is a framework that decouples these forceful tasks into task-planning and internal-model-based predictive control. Across extensive simulation and real-world experiments, it achieves higher success rates and improved generalization to unseen object weights, as well as better safety and energy efficiency.",
+  "authors": ["Jiawei Gao", "Chaoqi Liu", "Peilin Wu", "Haonan Chen", "Yilun Du"],
+  "date": "2026-06-09",
+  "starred": true,
+  "tags": ["manipulation", "imitation-learning", "planning"],
+  "links": [
+    { "label": "Project Page", "url": "https://gao-jiawei.com/IMPACT/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.10818" },
+    { "label": "Code", "url": "https://github.com/Winston-Gu/IMPACT" },
+    { "label": "Video", "url": "https://www.youtube.com/watch?v=kboJsLPIrYI" }
+  ]
+}

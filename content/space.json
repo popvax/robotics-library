@@ -1,0 +1,11 @@
+{
+  "title": "SPACE: Enabling Learning from Cross-Robot Data Toward Generalist Policies",
+  "summary": "In robot learning, scaling training datasets across diverse embodiments and environments has become a dominant paradigm for learning generalizable policies, commonly via behavior cloning of pre-collected demonstrations. But because robot actions are tied to the dynamics of the data-collection robot, different robots may require different actions to achieve the same motion, hindering both training and deployment across robots. SPACE (State Prediction and Adaptive Command Execution) addresses this by using Cartesian state delta as a universal action representation: a Cartesian state-delta policy predicts geometric end-effector displacement, and an Action Adapter converts it into robot-specific control commands, handling dynamics variation across embodiments, across hardware units of the same embodiment, and within a single robot during operation. Experiments show SPACE substantially outperforms policies that directly predict control commands when learning from data collected across different embodiments and hardware units, and remains robust under deployment-time dynamics shifts including changes in control frequency, object weight, and controller gains.",
+  "authors": ["Haeone Lee", "Byeongguk Jeon", "Suchae Jeong", "Jian Kim", "Kimin Lee"],
+  "date": "2026-06-23",
+  "tags": ["generalist-policy", "imitation-learning", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://haeone.site/space-website/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.24049" }
+  ]
+}

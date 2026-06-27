@@ -1,0 +1,11 @@
+{
+  "title": "KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation",
+  "summary": "Generalizing manipulation policies across robot embodiments remains difficult because standard policies entangle task reasoning with embodiment-specific motor control. KITE (Kinematic Interaction Transfer across Embodiments) studies zero-shot cross-embodiment manipulation — deploying a policy trained on source embodiments onto a structurally different target embodiment without additional task demonstrations — by decoupling manipulation into embodiment-agnostic task reasoning and embodiment-specific motor control, connected through a learned latent representation of interaction intent based on contact patterns. A shared policy predicts latent intents from source demonstrations, while an intent-conditioned action decoder learned from each embodiment's kinematic model performs motor control, so adapting to a new embodiment requires only training a new action decoder from its kinematic model, without recollecting demonstrations. Evaluated on three manipulation tasks spanning transfer between parallel grippers, dexterous hands, and composite embodiments, KITE consistently achieves zero-shot transfer to structurally different targets, outperforming state-of-the-art baselines in transfer success and task-embodiment scope.",
+  "authors": ["Qianxu Wang", "Kuan Fang"],
+  "date": "2026-06-20",
+  "tags": ["manipulation", "generalist-policy", "representation"],
+  "links": [
+    { "label": "Project Page", "url": "https://kite-manip.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.22113" }
+  ]
+}

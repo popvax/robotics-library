@@ -1,0 +1,14 @@
+{
+  "title": "FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation",
+  "summary": "Despite the success of vision-based generalist robotic policies, existing tactile-based policies remain tied to fixed embodiments and sensor setups, because tactile signals are highly heterogeneous across hardware. FTP-1 is the first generalist foundation tactile policy, pretrained to acquire transferable tactile manipulation abilities across diverse sensors and embodiments: it supports image-, array-, and state-based tactile inputs via heterogeneous encoders that project them into unified morphology-aware latent tokens, jointly modeled by a shared tactile Transformer expert. Pretrained on around 3,000 hours of tactile manipulation data aggregated from 26 sources spanning human and robot demonstrations across 21 sensors, FTP-1 learns skills that transfer beyond the sensors seen during pretraining. Across finetuning experiments over 5 hardware configurations it improves contact-rich manipulation on seen sensor setups by +17.2% and transfers to two previously unseen tactile-sensor setups with a +31% gain in success rate, establishing the first unified foundation baseline for tactile manipulation.",
+  "authors": ["Chengbo Yuan", "Zicheng Zhang", "Mingjie Zhou", "Wendi Chen", "Yi Wang", "Zhuoyang Liu", "Dantong Niu", "Shuo Wang", "Hui Zhang", "Wenkang Zhang", "Yingdong Hu", "Yuanqing Gong", "Wanli Xing", "Chuan Wen", "Cewu Lu", "Kaifeng Zhang", "Yang Gao"],
+  "date": "2026-06-11",
+  "tags": ["generalist-policy", "manipulation", "perception"],
+  "links": [
+    { "label": "Project Page", "url": "https://ftp1-policy.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.13102" },
+    { "label": "Code", "url": "https://github.com/michaelyuancb/ftp1-policy" },
+    { "label": "Models", "url": "https://huggingface.co/MJJJJ1064/ftp1_v0426_50kstep" },
+    { "label": "Dataset", "url": "https://www.modelscope.cn/datasets/Eureka1064/FTP-1-Dataset" }
+  ]
+}

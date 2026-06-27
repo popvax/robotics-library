@@ -1,0 +1,13 @@
+{
+  "title": "TSIL: Temporal Self-Imitation Learning",
+  "summary": "Long-horizon robot manipulation policies trained with reward shaping can still achieve high return through inefficient interactions, while rare efficient behaviors discovered during training may be forgotten. TSIL (Temporal Self-Imitation Learning) is a reinforcement learning framework that treats temporal efficiency itself as a source of self-supervision: it mines temporally efficient successful trajectories generated during learning and converts them into reusable supervision for future policy improvement. It progressively refines learning using configuration-conditioned adaptive temporal targets derived from fast successful trajectories, while preserving and replaying efficient behaviors through efficiency-weighted self-imitation learning. Across 15 distinct long-horizon manipulation tasks, TSIL consistently improves learning efficiency, task-completion efficiency, revisitation of fast successful behaviors, and robustness to unstable training conditions.",
+  "authors": ["Yinsen Jia", "Boyuan Chen"],
+  "date": "2026-06-18",
+  "tags": ["reinforcement-learning", "imitation-learning", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://generalroboticslab.com/TSIL" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.19752" },
+    { "label": "Code", "url": "https://github.com/generalroboticslab/TSIL" },
+    { "label": "Video", "url": "https://youtu.be/Nng0trpbqW8" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "SVM: Learning Process Rewards via Success Visitation Matching for Efficient RL",
+  "summary": "In many modern applications of reinforcement learning (RL), the natural task reward is inherently sparse — 0 everywhere except +1 on task completion — so maximizing it requires solving a hard credit-assignment problem, leading to slow or ineffective improvement. SVM (Success Visitation Matching) transforms a sparse outcome reward into a dense process reward by training a discriminator to distinguish previous successful from unsuccessful episodes, then using it to incentivize the policy to match the state-action visitations of successful episodes while avoiding those of unsuccessful ones. Because it matches visitations over all states — not just those at task success — the reward provides dense feedback on whether progress is being made toward completion, and is shown to do so provably without changing the optimal policy. Focusing on finetuning robotic control policies, the approach yields significantly faster RL finetuning on both simulated and real-world manipulation tasks than maximizing the sparse outcome reward alone.",
+  "authors": ["Raymond Tsao", "Andrew Wagenmaker", "Sergey Levine"],
+  "date": "2026-06-22",
+  "tags": ["reinforcement-learning", "reward-design", "manipulation"],
+  "links": [
+    { "label": "Project Page", "url": "https://success-visitation-matching.github.io/" },
+    { "label": "arXiv", "url": "https://arxiv.org/abs/2606.23640" }
+  ]
+}
